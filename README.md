@@ -62,6 +62,7 @@ codebot-tfg/
 ├── credentials.yml                # Configuración de canales
 ├── domain.yml                     # Intents, entidades, slots, respuestas y acciones
 ├── endpoints.yml                  # Conexión con el servidor de acciones
+├── requirements.txt               # Dependencias del proyecto
 ├── telegram_bridge.py             # Puente entre Telegram y Rasa
 └── README.md                      # Documentación principal
 ```
@@ -147,6 +148,8 @@ Antes de ejecutar el puente, debe definirse el token mediante una variable de en
 ```powershell
 $env:TELEGRAM_BOT_TOKEN="TOKEN_DEL_BOT"
 python telegram_bridge.py
+```
+
 ## Validación
 
 La versión definitiva se evaluó mediante una campaña exhaustiva formada por **711 pruebas distribuidas en 13 hojas**, seguida de una revalidación funcional, de regresión y del modelo NLU sobre la versión 18.
