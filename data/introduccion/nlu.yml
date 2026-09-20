@@ -1,0 +1,178 @@
+version: "3.1"
+
+nlu:
+- intent: ask_que_es_programa
+  examples: |
+    - que es un programa
+    - que es un programa?? 
+    - programa que es
+    - que significa programa
+    - que es un programa exactamente
+    - que se considera un programa en c
+    - que es un programa informatico
+    - que es un programa en informatica
+    - explicame que es un programa
+    - define programa
+    - no entiendo que es un programa
+    - no entiendo que es un programa en c
+    - explicamelo facil que es un programa
+    - programa en c
+    - programa definicion
+    - programa en programacion
+    - explicame programa en c
+    - k es un programa
+    - q es un programa
+    - ke es un programa
+    - k es programa
+    - que es un programa en c
+    - programa en c que significa
+
+- intent: ask_proceso_desarrollo
+  examples: |
+    - cual es el proceso de desarrollo de un programa
+    - que significa editar compilar y ejecutar
+    - explicame el proceso editar compilar ejecutar
+    - cuales son las fases basicas para hacer un programa
+    - que pasos sigo para crear un programa en c
+    - no entiendo lo de compilar y ejecutar
+    - no entiendo editar compilar ejecutar
+    - que es eso de compilar ejecutar
+    - pasos para hacer un programa
+    - como hago un programa desde cero
+    - primero edito o compilo
+    - no entiendo el proceso de programar
+    - que hay que hacer despues de escribir el codigo
+    - que es ejecutar
+    - que significa ejecutar
+    - ejecutar programa que es
+    - que hace ejecutar en programacion
+    - para que sirve ejecutar un programa
+    - que es editar
+    - que es ejecutar programa
+    - editar compilar ejecutar que es
+    - pasos editar compilar ejecutar
+    - que hace cada paso programacion
+
+
+- intent: ask_entorno_programacion
+  examples: |
+    - que es el entorno de programacion
+    - que necesito para programar en c
+    - que herramientas se usan para programar
+    - explicame que es un entorno de programacion
+    - para que sirve el editor y el compilador
+    - que hace el entorno de desarrollo
+    - que necesito instalar para programar
+    - que programas necesito para c
+    - entorno de programacion que es eso
+    - que necesito para hacer programas
+    - con que programa se programa en c
+    - necesito algun programa especial para c
+    - que uso para programar
+    - que herramientas necesito
+
+- intent: ask_estructura_programa_c
+  examples: |
+    - cual es la estructura basica de un programa en c
+    - como es un programa basico en c
+    - enseñame la estructura de un programa en c
+    - que partes tiene un programa en c
+    - ejemplo de estructura basica en c
+    - como se organiza un programa en c
+    - no entiendo la estructura de un programa en c
+    - como empieza un programa en c
+    - que lleva un programa en c
+    - partes de un programa en c
+    - estructura basica c explicacion
+    - como se hace un programa basico
+    - ejemplo programa c simple
+    - cual es el esqueleto de un programa en c
+    - como queda un programa vacio en c
+    - que es lo minimo que necesita un programa en c
+    - cual es la plantilla de un programa en c
+
+- intent: ask_funcion_main
+  examples: |
+    - que es main
+    - para que sirve la funcion main
+    - que hace int main
+    - explicame la funcion main
+    - por que main es importante
+    - que pasa dentro de main
+    - que es main en c
+    - que hace main en c
+    - para que sirve int main
+    - no entiendo lo de main
+    - main que es
+    - porque siempre hay un main
+    - que pasa si no pongo main
+    - main es obligatorio
+    - porque el programa empieza en main
+    - quien ejecuta main
+    - que tiene de especial main
+    - por que todos los ejemplos tienen main
+    - el programa siempre empieza por main
+
+- intent: ask_comentarios_c
+  examples: |
+    - como se ponen comentarios en c
+    - que son los comentarios en c
+    - para que sirven los comentarios
+    - diferencia entre comentario de linea y bloque
+    - como comentar codigo en c
+    - explicame los comentarios
+    - como hago comentarios
+    - comentar codigo como se hace
+    - para que sirven comentarios en codigo
+    - diferencia // y /* */
+    - como comentar en c facil
+    - puedo comentar varias lineas
+    - comentarios c explicacion
+
+- intent: ask_librerias_include
+  examples: |
+    - que significa include
+    - para que sirve include en c
+    - que son las librerias en c
+    - que hace stdio h
+    - por que se pone include al principio
+    - explicame las librerias y el include
+    - que es include en c
+    - que hace hashtag include
+    - include para que sirve
+    - que es stdio.h
+    - porque hay que poner include
+    - no entiendo include
+    - librerias en c que son
+    - que significa hashtag include stdio.h
+    - include explicacion facil
+    - de donde sale stdio.h
+    - por que tengo que importar librerias
+    - que pasa si no pongo include
+    - puedo usar printf sin include
+    - para que sirve importar librerias
+
+- intent: ask_compilador
+  examples: |
+    - que es un compilador
+    - para que sirve el compilador
+    - que hace un compilador
+    - que significa compilar
+    - explicame que es compilar
+    - para que sirve compilar un programa
+    - compilar que es
+    - que pasa cuando compilo
+    - para que sirve compilar codigo
+    - no entiendo lo de compilar
+    - que hace el compilador exactamente
+    - porque hay que compilar
+    - que es compilar en c
+    - compilar programa que significa
+    - q es compilar
+    - k es compilar
+    - que es compilar
+    - que significa compilar en c
+    - por que no puedo ejecutar directamente el codigo
+    - para que convertir el codigo a lenguaje maquina
+    - quien entiende el codigo que escribo
+    - por que hay que traducir el programa

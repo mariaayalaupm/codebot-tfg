@@ -1,0 +1,28 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos generados por Rasa
+models/
+.rasa/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Credenciales y variables locales
+.env
+.env.*
+!.env.example
+
+# Datos reales generados por CodeBot
+progreso_alumnos.json
+progreso_ejercicios_guiados.json
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

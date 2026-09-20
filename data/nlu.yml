@@ -1,0 +1,259 @@
+version: "3.1"
+
+#GENERALES
+
+
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - holi
+    - buenas
+    - buenos días
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - hola CodeBot
+    - ey
+    - qué tal
+    - holaa
+    - saludos
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - adios
+    - hasta luego
+    - hasta pronto
+    - nos vemos
+    - chao
+    - me voy
+    - hablamos luego
+
+- intent: agradecimiento
+  examples: |
+    - gracias
+    - muchas gracias
+    - mil gracias
+    - gracias por la ayuda
+    - vale gracias
+    - perfecto gracias
+    - ok gracias
+    - genial gracias
+    - gracias, ya lo entiendo
+    - me ha servido, gracias
+    - graciasss
+
+- intent: confusion
+  examples: |
+    - no entiendo
+    - no lo entiendo
+    - no entiendo esto
+    - no entiendo nada
+    - no lo pillo
+    - no me queda claro
+    - no lo he entendido
+    - estoy perdido
+    - me he liado
+    - que agobio
+    - no me entero de nada
+    - no me entero
+    - ayuda
+    - no estoy entendiendo
+    - no estoy entendiendo esto
+    - no entiendo esto que has dicho
+    - no entiendo este tema
+
+
+
+#ADMINISTRATIVOS
+
+
+- intent: ask_exam_dates
+  examples: |
+    - ¿cuándo es el examen?
+    - ¿qué día es el examen final?
+    - fechas de exámenes
+    - ¿cuándo es la convocatoria?
+    - ¿cuándo publican las fechas del examen?
+    - ¿qué fecha tiene el examen de Fundamentos?
+    - ¿qué fecha tiene el examen de Programacion?
+    - ¿qué fecha tiene el examen de Progra?
+    - ¿cuándo es el examen de Programación?
+    - ¿cuándo es el examen de Progra?
+    - ¿cuándo es el examen de Fundamentos de Programación?
+
+- intent: ask_lab_schedule
+  examples: |
+    - horario de prácticas
+    - ¿a qué hora es la práctica?
+    - ¿cuándo tengo laboratorio?
+    - ¿qué día son las prácticas?
+    - horario del laboratorio de Fundamentos
+    - horario del laboratorio de Programacion
+    - horario del laboratorio de Progra
+    - ¿qué hora es la práctica de Programación?
+    - ¿qué hora es la práctica de Progra?
+    - ¿qué hora es la práctica de Fundamentos de Programación?
+
+- intent: ask_deadlines
+  examples: |
+    - ¿cuál es el plazo de entrega?
+    - ¿hasta cuándo se puede entregar?
+    - fecha límite de entrega
+    - ¿cuándo vence la práctica?
+    - deadline de la práctica
+    - ¿cuál es la fecha límite de la entrega?
+
+- intent: ask_office_hours
+  examples: |
+    - horario de tutorías
+    - ¿cuándo son las tutorías?
+    - ¿cuándo puedo ir a tutoría?
+    - horas de atención de profesores
+    - tutorías de programacion
+    - hablar con profesores
+
+- intent: ask_where_to_check
+  examples: |
+    - ¿dónde miro las fechas oficiales?
+    - ¿dónde está el horario?
+    - ¿dónde se publican las fechas de examen?
+    - ¿en qué plataforma está el horario de prácticas?
+    - ¿dónde lo puedo consultar?
+    - ¿dónde lo ponen en la web?
+
+
+#MENU
+
+- intent: pedir_menu_temas
+  examples: |
+    - quiero ver los temas
+    - enseñame los temas
+    - muéstrame los temas
+    - que temas hay
+    - cuáles son los temas
+    - ver temario
+    - quiero ver el temario
+    - mostrar menú de temas
+    - quiero un menú por temas
+    - menú de temas
+    - temas
+    - menu
+    - ¿que temas hay?
+    - ¿qué temas hay?
+    - temario de la asignatura
+
+- intent: elegir_tema
+  examples: |
+    - tema [0](numero_tema)
+    - tema [1](numero_tema)
+    - tema [2](numero_tema)
+    - tema [3](numero_tema)
+    - tema [4](numero_tema)
+    - tema [5](numero_tema)
+    - tema [6](numero_tema)
+    - tema [7](numero_tema)
+    - tema [8](numero_tema)
+    - tema [9](numero_tema)
+    - tema [10](numero_tema)
+    - quiero el tema [0](numero_tema)
+    - quiero el tema [5](numero_tema)
+    - explícame el tema [3](numero_tema)
+    - dame el tema [7](numero_tema)
+    - introducción
+    - introducción a la programación
+    - variables y tipos de datos
+    - entrada y salida
+    - operadores
+    - condicionales
+    - bucles
+    - funciones
+    - arrays
+    - strings
+    - punteros
+    - structs
+    - quiero introducción
+    - quiero variables y tipos de datos
+    - quiero entrada y salida
+    - quiero operadores
+    - quiero condicionales
+    - quiero bucles
+    - quiero funciones
+    - quiero arrays
+    - quiero strings
+    - quiero punteros
+    - quiero structs
+    - explícame introducción
+    - explícame variables y tipos de datos
+    - explícame entrada y salida
+    - explícame operadores
+    - explícame condicionales
+    - explícame bucles
+    - explícame funciones
+    - explícame arrays
+    - explícame strings
+    - explícame punteros
+    - explícame structs
+
+
+#EJERCICIOS GUIADOS
+- intent: pedir_ejercicio_guiado
+  examples: |
+    - quiero un ejercicio guiado
+    - ponme un ejercicio guiado
+    - quiero ver un ejercicio guiado
+    - ejercicios guiados
+    - quiero un ejemplo resuelto
+    - quiero un ejercicio paso a paso
+
+- intent: elegir_ejercicio_guiado
+  examples: |
+    - ejercicio 1
+    - ejercicio guiado 1
+    - quiero el ejercicio 1
+    - quiero ver el ejercicio 1
+    - ejercicio 2
+    - ejercicio guiado 2
+    - quiero el ejercicio 2
+    - quiero ver el ejercicio 2
+    - ejercicio 3
+    - ejercicio guiado 3
+    - quiero el ejercicio 3
+    - quiero ver el ejercicio 3
+    - ejercicio 4
+    - ejercicio guiado 4
+    - quiero el ejercicio 4
+    - quiero ver el ejercicio 4
+    - ejercicio 5
+    - ejercicio guiado 5
+    - quiero el ejercicio 5
+    - quiero ver el ejercicio 5
+    - ejercicio 6
+    - ejercicio guiado 6
+    - quiero el ejercicio 6
+    - quiero ver el ejercicio 6
+    - ejercicio 7
+    - ejercicio guiado 7
+    - quiero el ejercicio 7
+    - quiero ver el ejercicio 7
+    - ejercicio 8
+    - ejercicio guiado 8
+    - quiero el ejercicio 8
+    - quiero ver el ejercicio 8
+ 
+
+ #PROGRESO
+- intent: ver_progreso
+  examples: |
+    - ver progreso
+    - quiero ver mi progreso
+    - mostrar progreso
+    - cómo voy
+    - como voy
+    - ver mis resultados
+    - mis resultados
+    - quiero ver mis resultados
+    - qué tal voy
+    - que tal voy
+    - ver mi rendimiento

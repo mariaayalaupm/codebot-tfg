@@ -1,0 +1,259 @@
+version: "3.1"
+
+#TEMA 5
+
+nlu:
+- intent: ask_que_es_bucle
+  examples: |
+    - que es un bucle
+    - que son los bucles
+    - para que sirve un bucle
+    - para que sirven los bucles
+    - explicame que es un bucle
+    - explicame los bucles
+    - no entiendo los bucles
+    - que hacen los bucles
+    - que significa repetir en programacion
+    - que es repetir algo en programacion
+    - que es una repeticion en programacion
+    - para que sirve repetir instrucciones
+    - para que sirve repetir cosas en un programa
+    - que utilidad tienen los bucles
+    - que es una estructura repetitiva
+    - bucle q es
+    - que es un loop
+    - no pillo que es un bucle
+    - me explicas bucle facil
+    - para q sirve un bucle
+    - no entiendo lo de repetir cosas
+    - que significa bucle en c
+
+- intent: ask_como_hacer_bucle
+  examples: |
+    - como hacer un bucle
+    - como se hace un bucle
+    - como hacer un bucle en c
+    - como hago un bucle
+    - como repetir algo
+    - como repetir una accion
+    - como repetir instrucciones
+    - como repetir varias veces algo
+    - como hago para repetir algo en c
+    - como hago para repetir instrucciones
+    - como se repite algo en programacion
+    - como se hace una repeticion
+    - como programo una repeticion
+    - como hago un bucle para repetir
+    - como puedo repetir codigo
+
+- intent: ask_bucle_while
+  examples: |
+    - que es un while
+    - que es el bucle while
+    - para que sirve while
+    - como funciona while en c
+    - explicame el while
+    - explicame while
+    - cuando se usa while
+    - no entiendo while
+    - que hace while
+    - como funciona un while
+    - para que sirve el bucle while
+    - cuando conviene usar while
+    - uso de while
+    - que hace un bucle while
+    - como va el while
+    - while q es
+    - como funciona el while
+    - no entiendo el while
+    - explicame while facil
+    - para q sirve el while
+    - como se usa el while en c
+    - cuando uso while
+    - no entiendo el while ayudame
+    - explicame el while paso a paso
+
+- intent: ask_bucle_do_while
+  examples: |
+    - que es un do while
+    - que es el bucle do while
+    - para que sirve do while
+    - como funciona do while
+    - explicame do while
+    - cuando se usa do while
+    - no entiendo do while
+    - que hace do while
+    - como funciona un do while
+    - para que sirve el bucle do while
+    - uso de do while
+    - do while q es
+    - cuando uso do while
+    - explicame do while facil
+
+- intent: ask_bucle_for
+  examples: |
+    - que es un for
+    - que es el bucle for
+    - para que sirve for
+    - como funciona for en c
+    - explicame el for
+    - explicame for
+    - cuando se usa for
+    - no entiendo for
+    - que hace for
+    - como funciona un for
+    - para que sirve el bucle for
+    - cuando conviene usar for
+    - uso de for
+    - que hace un bucle for
+    - como va el for
+    - for q es
+    - como funciona el for
+    - no entiendo el for
+    - explicame el for facil
+    - para q sirve el for
+    - como se usa el for en c
+    - cuando uso for
+    - estructura del for explicacion
+    - no entiendo el for ayudame
+    - explicame el for paso a paso
+
+- intent: ask_bucles_anidados
+  examples: |
+    - que son los bucles anidados
+    - que es un for anidado
+    - que es un while anidado
+    - como funcionan los bucles anidados
+    - explicame los bucles anidados
+    - como hacer bucles anidados
+    - como se hacen los bucles anidados
+    - para que sirven los bucles anidados
+    - no entiendo los bucles anidados
+    - uso de bucles anidados
+    - cuando se usan los bucles anidados
+    - como meter un bucle dentro de otro
+    - que pasa si pongo un for dentro de otro for
+    - como recorrer una matriz con bucles
+    - para que sirve un doble for
+    - como funciona un bucle dentro de otro
+    - no entiendo el doble bucle
+    - cuando necesito dos bucles
+
+- intent: ask_break_bucles
+  examples: |
+    - para que sirve break en un bucle
+    - que hace break en un while
+    - que hace break en un for
+    - uso de break en bucles
+    - como salir de un bucle
+    - como parar un bucle
+    - como se para un bucle
+    - como corto un bucle
+    - como hago para salir de un bucle
+    - como detener un bucle
+    - para que sirve break
+    - que hace break en un bucle
+    - como salir antes de un for
+    - como salir antes de un while
+    - break termina todo el bucle
+    - break sale solo del if o del bucle
+    - que pasa cuando se ejecuta break
+    - puedo usar break dentro de un if
+
+- intent: ask_continue_bucles
+  examples: |
+    - para que sirve continue en un bucle
+    - que hace continue
+    - uso de continue en for
+    - uso de continue en while
+    - como saltar a la siguiente iteracion
+    - para que sirve continue en while
+    - para que sirve continue en for
+    - que hace continue en un bucle
+    - como funciona continue
+    - explicame continue en bucles
+    - que pasa si uso continue
+    - uso de continue en bucles
+    - continue termina el bucle
+    - continue se salta una vuelta
+    - que diferencia hay entre break y continue
+    - continue vuelve al principio del bucle
+    - para que sirve saltarse una iteracion
+    - que pasa cuando se ejecuta continue
+
+- intent: ask_diferencia_bucles
+  examples: |
+    - diferencia entre while y for
+    - diferencia entre for y while
+    - diferencia entre while do while y for
+    - cuando usar while o for
+    - cuando usar for o while
+    - cuando conviene usar while o for
+    - cual es la diferencia entre while y for
+    - que diferencia hay entre while y for
+    - que bucle debo usar
+    - cual es la diferencia entre los bucles
+    - cuando usar cada bucle
+    - que bucle usar en cada caso
+    - cual me conviene usar while o for
+    - en que se diferencian while y for
+    - cual es mejor for o while
+    - no se cuando usar cada bucle
+    - diferencia entre while y do while
+    - diferencia entre do while y while
+    - cual es la diferencia entre while y do while
+    - que diferencia hay entre while y do while
+    - cuando usar while o do while
+    - cuando usar do while o while
+    - en que se diferencian while y do while
+    - cual me conviene usar while o do while
+    - que bucle es mejor while o do while
+    - diferencia entre los bucles while y do while
+
+- intent: ask_ejemplo_bucles
+  examples: |
+    - ejemplo de bucle
+    - ponme un ejemplo de bucle
+    - dame un ejemplo de bucle
+    - ejemplo de for
+    - ponme un ejemplo de for
+    - dame un ejemplo de for
+    - ejemplo de while
+    - ponme un ejemplo de while
+    - dame un ejemplo de while
+    - ejemplo de do while
+    - ponme un ejemplo de do while
+    - dame un ejemplo de do while
+    - quiero un ejemplo de bucle
+    - quiero ver un ejemplo de while
+    - quiero ver un ejemplo de for
+    - ejemplo facil de for
+    - ejemplo con while
+    - no entiendo los bucles ponme un ejemplo
+    - explicame los bucles con un ejemplo
+
+- intent: ask_bucle_infinito
+  examples: |
+    - que es un bucle infinito
+    - por que se produce un bucle infinito
+    - como evitar un bucle infinito
+    - que pasa si un bucle nunca termina
+    - errores con bucles infinitos
+    - como se produce un bucle infinito
+    - que ocurre si un while no termina nunca
+    - como saber si un bucle es infinito
+    - cuando un bucle se vuelve infinito
+    - explicame el bucle infinito
+    - bucle infinito q es
+    - que es un loop infinito
+    - por que se queda en bucle infinito
+    - mi programa no para nunca
+    - como evitar bucles infinitos
+    - no entiendo por que mi bucle no termina
+    - por qué mi while no termina
+    - por que mi programa se queda pillado
+    - por que mi programa no avanza
+    - se me queda ejecutando todo el rato
+    - mi bucle no acaba nunca
+    - el programa se queda atascado en el while
+    - que hago si el bucle no para

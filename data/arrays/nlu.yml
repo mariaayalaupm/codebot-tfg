@@ -1,0 +1,391 @@
+version: "3.1"
+
+#TEMA 7
+
+nlu:
+- intent: ask_arrays
+  examples: |
+    - que es un array
+    - que es un vector
+    - que son los arrays
+    - que son los vectores
+    - explicame que es un array
+    - explicame que es un vector
+    - explicame los arrays
+    - explicame los vectores
+    - no entiendo los arrays
+    - no entiendo los vectores
+    - no entiendo lo de los arrays
+    - no entiendo lo de los vectores
+    - array es lo mismo que vector
+    - vector es lo mismo que array
+    - que hace un array
+    - que hace un vector
+    - que es un array en c
+    - que hace un vector en c
+    - que significa array en programacion
+    - que significa vector en programacion
+    - que son los vectores en c
+    - que es un vector
+    - que son los vectores
+    - array q es
+    - vector q es
+    - no pillo que es un array
+    - no pillo que es un vector
+    - me explicas array facil
+    - me explicas vectores facil
+  
+   
+
+- intent: ask_declaracion_arrays
+  examples: |
+    - como se declara un array
+    - como se declara un vector
+    - como declarar un array
+    - como declarar un vector
+    - declaracion de arrays
+    - declaracion de vectores
+    - como escribir un array
+    - como escribir un vector
+    - que pongo para declarar un array
+    - que pongo para declarar un vector
+    - como crear un array
+    - como crear un vector
+    - como se crea un array
+    - como se crea un vector
+    - como definir un array
+    - como definir un vector
+    - como hacer un array
+    - como hacer un vector
+    - como poner un array en c
+    - como poner un vector en c
+    - como se escribe un array en c
+    - como se escribe un vector en c
+    - sintaxis de un array
+    - sintaxis de un vector
+    - estructura de declaracion de un array
+    - estructura de declaracion de un vector
+    - como creo un array en c
+    - como creo un vector
+    - como se escribe un array
+    - como se escribe un vector
+    - no se hacer arrays
+    - no se hacer vectores
+    - como empiezo un array
+    - como empiezo un vector
+    - como defino un array
+    - como defino un vector
+    - me lio declarando arrays
+    - me lio declarando vectores
+
+- intent: ask_acceso_arrays
+  examples: |
+    - como acceder a un array
+    - como acceder a un vector
+    - como se accede a un array
+    - como se accede a un vector
+    - que es un indice
+    - como acceder a un elemento de un array
+    - como acceder a un elemento de un vector
+    - como leer una posicion de un array
+    - como leer una posicion de un vector
+    - como usar indices en un array
+    - como usar indices en un vector
+    - como entrar en un array
+    - como entrar en un vector
+    - como coger un valor de un array
+    - como coger un valor de un vector
+    - como acceder a una posicion de un array
+    - como acceder a una posicion de un vector
+    - como se usa el indice en un array
+    - como se usa el indice en un vector
+    - como leer un array por posiciones
+    - como leer un vector por posiciones
+    - posicion de un array
+    - posicion de un vector
+    - indices de arrays
+    - indices de vectores
+    - acceso a arrays
+    - acceso a vectores
+    - como ver un elemento de un array
+    - como ver un elemento de un vector
+    - como accedo a un array
+    - como accedo a un vector
+    - como cojo un elemento de un array
+    - como cojo un elemento de un vector
+    - como saco un valor del array
+    - como saco un valor del vector
+    - no entiendo los indices
+    - como accedo a la posicion de un array
+    - como accedo a la posicion de un vector
+
+- intent: ask_uso_arrays
+  examples: |
+    - como se usa un array
+    - como se usa un vector
+    - como usar un array
+    - como usar un vector
+    - como se usan los arrays
+    - como se usan los vectores
+    - como usar arrays
+    - como usar vectores
+    - como funcionan los arrays
+    - como funcionan los vectores
+    - uso de arrays
+    - uso de vectores
+    - para que se usan los arrays
+    - para que se usan los vectores
+    - como trabajo con arrays
+    - como trabajo con vectores
+    - como van los arrays
+    - como van los vectores
+    - cuando usar un array
+    - cuando usar un vector
+    - como utilizar un array
+    - como utilizar un vector
+    - como utilizar arrays en c
+    - como utilizar vectores en c
+    - como meter datos en un array
+    - como meter datos en un vector
+    - como guardar varios valores
+    - como funciona un array
+    - como funciona un vector
+    - como funciona el array
+    - como funciona el vector
+    - como funciona un array en c
+    - como funciona un vector en c
+    - explicame como funciona un array
+    - explicame como funciona un vector
+    - no entiendo como funciona un array
+    - no entiendo como funciona un vector
+    - como va un array
+    - como va un vector
+    - como va un array en c
+    - como va un vector en c
+    - para que sirve un array
+    - para que sirve un vector
+    - para que sirven los arrays
+    - para que sirven los vectores
+    - que utilidad tienen los arrays
+    - que utilidad tienen los vectores
+    - para que me sirve un array
+    - para que me sirve un vector
+
+- intent: ask_memoria_arrays
+  examples: |
+    - como guardar datos en un array
+    - como guardar datos en un vector
+    - como se guardan datos en un array
+    - como se guardan datos en un vector
+    - donde se guardan los arrays
+    - donde se guardan los vectores
+    - como se almacenan los arrays
+    - como se almacenan los vectores
+    - como estan guardados los arrays en memoria
+    - como estan guardados los vectores en memoria
+    - memoria de los arrays
+    - memoria de los vectores
+    - como se almacena un array
+    - como se almacena un vector
+    - donde esta un array en memoria
+    - donde esta un vector en memoria
+    - como se guarda la informacion en un array
+    - como se guarda la informacion en un vector
+    - como guarda valores un array
+    - como guarda valores un vector
+    - como se organizan en memoria los arrays
+    - como se organizan en memoria los vectores
+    - almacenamiento de arrays
+    - almacenamiento de vectores
+    - los arrays ocupan memoria seguida
+    - los vectores ocupan memoria seguida
+    - por que los arrays son contiguos
+    - por que los vectores son contiguos
+    - que significa que un array sea contiguo
+    - que significa que un vector sea contiguo
+    - como estan colocados los elementos de un array en memoria
+    - como estan colocados los elementos de un vector en memoria
+    - donde guarda c los elementos del array
+    - donde guarda c los elementos del vector
+    - los elementos de un array estan juntos en memoria
+    - los elementos de un vector están juntos en memoria
+    - como se almacenan las posiciones de un array
+    - como se almacenan las posiciones de un vector
+    - por que se puede acceder tan rapido a un array
+    - por que se puede acceder tan rapido a un vector
+
+- intent: ask_recorrido_arrays
+  examples: |
+    - como recorrer un array
+    - como recorrer un vector
+    - como recorrer arrays
+    - como recorrer vectores
+    - como se recorre un array
+    - como se recorre un vector
+    - como recorrer un vector
+    - como se recorre un vector
+    - como leer todos los elementos de un array
+    - como leer todos los elementos de un vector
+    - como pasar por todo un array
+    - como pasar por todo un vector
+    - como iterar un array
+    - como iterar un vector
+    - como recorrer los elementos de un array
+    - como recorrer los elementos de un vector
+    - como mirar todo un array
+    - como mirar todo un vector
+    - recorrido de arrays
+    - recorrido de vectores
+    - recorrer arrays en c
+    - recorrer vectores en c
+    - como usar un for con arrays
+    - como usar un for con vectores
+    - como ir posicion por posicion en un array
+    - como ir posicion por posicion en un vector
+    - como leer un array entero
+    - como leer un vector entero
+    - no entiendo como recorrer arrays ayudame
+    - no entiendo como recorrer vectores ayudame
+    - explicame como recorrer arrays paso a paso
+    - explicame como recorrer vectores paso a paso
+    - como recorro un array
+    - como recorro un vector
+    - como recorrer un array con for
+    - como recorrer un vector con for
+    - como hago un bucle para array
+    - como hago un bucle para vector
+    - no se recorrer arrays
+    - no se recorrer vectores
+    - como imprimir todos los elementos de un array
+    - como imprimir todos los elementos de un vector
+    - como mostrar todos los valores de un array
+    - como mostrar todos los valores de un vector
+    - como recorrer un array completo
+    - como recorrer un vector completo
+    - como sacar por pantalla todo el array
+    - como sacar por pantalla todo el vector
+    - como leer todos los numeros guardados
+    - como hago para ver todos los elementos
+
+- intent: ask_arrays_multidimensionales
+  examples: |
+    - como funcionan arrays multidimensionales
+    - como funcionan vectores multidimensionales
+    - que es un array multidimensional
+    - que es un vector multidimensional
+    - que son los arrays multidimensionales
+    - que son los vectores multidimensionales
+    - explicame los arrays multidimensionales
+    - explicame los vectores multidimensionales
+    - como se usa un array multidimensional
+    - como se usa un vector multidimensional
+    - arrays de varias dimensiones
+    - vectores de varias dimensiones
+    - que es una matriz en c
+    - como funcionan las matrices
+    - para que sirven los arrays multidimensionales
+    - para que sirven los vectores multidimensionales
+    - uso de arrays multidimensionales
+    - uso de vectores multidimensionales
+    - como acceder a un array multidimensional
+    - como acceder a un vector multidimensional
+    - como declarar un array multidimensional
+    - como declarar un vector multidimensional
+    - array de dos dimensiones q es
+    - vector de dos dimensiones q es
+    - matriz en c que es
+    - no entiendo arrays multidimensionales
+    - no entiendo vectores multidimensionales
+    - como hacer un array 2d
+    - como hacer un vector 2d
+    - que es un array bidimensional
+    - que es un vector bidimensional
+    - arrays de varias dimensiones explicacion
+    - vectores de varias dimensiones explicacion
+    - que es una tabla de dos dimensiones
+    - como guardar datos en filas y columnas
+    - como hacer una tabla en c
+    - como funcionan las filas y columnas en un array
+    - como funcionan las filas y columnas en un vector
+    - que diferencia hay entre array normal y matriz
+    - que diferencia hay entre vector normal y matriz
+    - como guardar una matriz
+
+- intent: ask_errores_arrays
+  examples: |
+    - que pasa si me salgo del array
+    - que pasa si me salgo del vector
+    - errores en arrays
+    - errores en vectores
+    - errores comunes con arrays
+    - errores comunes con vectores
+    - que pasa si uso un indice fuera del array
+    - que pasa si uso un indice fuera del vector
+    - acceder fuera del array
+    - acceder fuera del vector
+    - salirse de un array
+    - salirse de un vector
+    - que ocurre si accedo a una posicion que no existe
+    - fallos con arrays
+    - fallos con vectores
+    - problemas con arrays
+    - problemas con vectores
+    - errores al usar arrays
+    - errores al usar vectores
+    - fuera de rango en arrays
+    - fuera de rango en vectores
+    - posiciones invalidas en arrays
+    - posiciones invalidas en vectores
+    - puedo acceder a array[10] si tiene 5 elementos
+    - puedo acceder a vector[10] si tiene 5 elementos
+    - que pasa si uso una posicion incorrecta
+    - puedo leer una posicion que no existe
+    - por que me falla al acceder al array
+    - por que me falla al acceder al vector
+    - por que me da error el array
+    - por que me da error el vector
+    - como evitar errores con arrays
+    - como evitar errores con vectores
+    - que errores suelen tener los arrays
+    - que errores suelen tener los vectores
+    - que pasa si me equivoco con el indice
+
+- intent: ask_ejemplo_arrays
+  examples: |
+    - ejemplo de array
+    - ejemplo de vector
+    - ponme un ejemplo de array
+    - ponme un ejemplo de vector
+    - dame un ejemplo de array
+    - dame un ejemplo de vector
+    - quiero un ejemplo de array
+    - quiero un ejemplo de vector
+    - ejemplo de vector
+    - ponme un ejemplo de vector
+    - ejemplo de recorrido
+    - ponme un ejemplo de recorrido
+    - dame un ejemplo de recorrido
+    - quiero ver un ejemplo de array
+    - quiero ver un ejemplo de vector
+    - ejemplo de array en c
+    - ejemplo de vector en c
+    - ejemplo de recorrer un array
+    - ejemplo de recorrer un vector
+    - como seria un array de ejemplo
+    - como seria un vector de ejemplo
+    - enseñame un array de ejemplo
+    - enseñame un vector de ejemplo
+    - quiero ver como se recorre un array
+    - quiero ver como se recorre un vector
+    - no entiendo los arrays ponme un ejemplo
+    - no entiendo los vectores ponme un ejemplo
+    - explicame arrays con un ejemplo
+    - explicame vectores con un ejemplo
+    - ejemplo facil de array en c
+    - ejemplo facil de vector en c
+    - ejemplo paso a paso de array
+    - ejemplo paso a paso de vector
+    - ejemplo con numeros en array
+    - ejemplo con numeros en vector
+    - hazme un ejemplo sencillo de array
+    - hazme un ejemplo sencillo de vector

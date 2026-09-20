@@ -1,0 +1,1711 @@
+version: "3.1"
+
+intents:
+
+  #GENERALES
+  - greet
+  - goodbye
+  - agradecimiento
+  - confusion
+
+  #ADMINISTRATIVO
+  - ask_exam_dates
+  - ask_lab_schedule
+  - ask_deadlines
+  - ask_office_hours
+  - ask_where_to_check
+
+  #TEORIA-INTRODUCCION
+  - ask_que_es_programa
+  - ask_proceso_desarrollo
+  - ask_entorno_programacion
+  - ask_estructura_programa_c
+  - ask_funcion_main
+  - ask_comentarios_c
+  - ask_librerias_include
+  - ask_compilador
+
+  #TEORIA-VARIABLES Y TIPOS
+  - ask_que_es_variable
+  - ask_declaracion_variable
+  - ask_inicializacion_variable
+  - ask_asignacion_variable
+  - ask_tipos_datos
+  - ask_booleanos
+  - ask_tamano_datos
+  - ask_casting
+  - ask_ejemplo_variable
+
+  #TEORIA-ENTRADA/SALIDA
+  - ask_entrada_salida
+  - ask_printf
+  - ask_formato_printf
+  - ask_scanf
+  - ask_especificadores_scanf
+  - ask_errores_scanf
+  - ask_ejemplo_entrada_salida
+
+  #TEORIA-OPERADORES
+  - ask_que_es_operador
+  - ask_tipos_operadores
+  - ask_para_que_sirven_operadores
+  - ask_como_usar_operadores
+  - ask_ejemplo_operadores
+  - ask_operadores_aritmeticos
+  - ask_operadores_relacionales
+  - ask_operadores_logicos
+  - ask_operador_suma
+  - ask_operador_igual
+  - ask_operador_diferente
+  - ask_operador_asignacion
+  - ask_operador_modulo
+  - ask_diferencia_division_modulo
+
+  #TEORIA-CONDICIONALES
+  - ask_que_es_condicional
+  - ask_como_hacer_condicion
+  - ask_ejemplo_if
+  - ask_sentencia_if
+  - ask_sentencia_if_else
+  - ask_sentencia_switch
+  - ask_cuando_usar_switch
+  - ask_ejemplo_switch
+  - ask_break_switch
+
+  #TEORIA-BUCLES
+  - ask_que_es_bucle
+  - ask_como_hacer_bucle
+  - ask_ejemplo_bucles
+  - ask_bucle_while
+  - ask_bucle_do_while
+  - ask_bucle_for
+  - ask_bucles_anidados
+  - ask_break_bucles
+  - ask_continue_bucles
+  - ask_diferencia_bucles
+  - ask_bucle_infinito
+
+  #TEORIA-FUNCIONES
+  - ask_que_es_funcion
+  - ask_uso_funciones
+  - ask_estructura_funcion
+  - ask_declaracion_funciones
+  - ask_llamada_funcion
+  - ask_parametros_entrada
+  - ask_paso_parametros
+  - ask_valor_retorno
+  - ask_funciones_void
+  - ask_diferencia_declarar_definir
+  - ask_ejemplo_funcion
+
+  #TEORIA-ARRAYS
+  - ask_arrays
+  - ask_declaracion_arrays
+  - ask_acceso_arrays
+  - ask_uso_arrays
+  - ask_memoria_arrays
+  - ask_recorrido_arrays
+  - ask_arrays_multidimensionales
+  - ask_errores_arrays
+  - ask_ejemplo_arrays
+
+  #TEORIA-STRINGS
+  - ask_cadenas
+  - ask_cadenas_declaracion
+  - ask_cadenas_printf_scanf
+  - ask_uso_strings
+  - ask_diferencia_string_char
+  - ask_errores_cadenas
+  - ask_ejemplo_string
+  - ask_cadenas_funciones
+  - ask_strlen
+  - ask_strcpy
+  - ask_strcmp
+  - ask_strcat
+  - ask_string_h
+
+  #TEORIA-PUNTEROS
+  - ask_punteros
+  - ask_direcciones_memoria
+  - ask_operador_dereferencia
+  - ask_operador_referencia
+  - ask_diferencia_operadores_punteros
+  - ask_declaracion_punteros
+  - ask_ejemplo_puntero
+  - ask_uso_punteros
+  - ask_punteros_arrays
+  - ask_punteros_funciones
+
+  #TEORIA-STRUCTS
+  - ask_structs
+  - ask_definicion_struct
+  - ask_declaracion_struct
+  - ask_acceso_struct
+  - ask_arrays_struct
+  - ask_punteros_struct
+  - ask_structs_funciones
+  - ask_errores_struct
+  - ask_campos_struct
+  - ask_diferencia_acceso_struct
+  - ask_ejemplo_struct
+
+
+  #MENU POR TEMAS
+  - pedir_menu_temas
+  - elegir_tema
+
+
+
+  #MINITESTS
+  - pedir_minitest
+  - respuesta_a
+  - respuesta_b
+  - respuesta_c
+  - respuesta_invalida_minitest
+
+  #EJERCICIOS GUIADOS
+  - pedir_ejercicio_guiado
+  - elegir_ejercicio_guiado
+
+  #PROGRESO
+  - ver_progreso
+
+
+#MENU
+entities:
+  - numero_tema
+
+
+responses:
+
+  #RESPUESTAS GENERALES
+  utter_greet:
+  - text: |
+      Hola, soy CodeBot 👋
+
+      ¿Qué quieres hacer?
+
+      1. Ver teoría por temas
+         Escribe: tema 0, tema 1, tema 2...
+
+      2. Hacer un minitest
+         Escribe: quiero practicar
+
+      3. Ver un ejercicio guiado 
+         Escribe: quiero un ejercicio guiado 
+
+  utter_goodbye:
+  - text: "Hasta luego. Si quieres, otro día seguimos repasando programación."
+
+  utter_agradecimiento:
+  - text: "¡Encantado de ayudar! 😊 Si necesitas algo mas, dime"
+
+  utter_confusion:
+  - text: "¡No pasa nada, es normal al principio! Puedes preguntarme algo mas concreto, o probar a pedir una tutoria a tu profesor."
+  
+
+  #RESPUESTAS ADMINISTRATIVAS
+  utter_exam_dates:
+  - text: "Las fechas de los examenes se miran en el Pod, o en Moodle"
+
+  utter_lab_schedule:
+  - text: "Puedes encontrar las fechas y grupos de las practicas en el Pod"
+
+  utter_deadlines:
+  - text: "No dispongo de información sobre las fechas de entrega, ya que cada profesor las establece de forma independiente. Te recomiendo consultar Moodle o la información proporcionada en clase."
+
+  utter_office_hours:
+  - text: "No dispongo del horario de tutorías, ya que cada profesor lo gestiona de forma independiente. Te recomiendo contactar con él o ella a través de webmail para consultarlo."
+
+  utter_where_to_check:
+  - text: "Las fechas y horarios oficiales se publican en la plataforma docente y en la web del departamento."
+
+  #TEORIA-INTRODUCCION
+  utter_ask_que_es_programa:
+    - text: "Un programa es un conjunto ordenado de instrucciones que el ordenador ejecuta para realizar una tarea."
+
+  utter_ask_proceso_desarrollo:
+    - text: "El proceso de desarrollo de un programa en C sigue un ciclo fundamental. De forma básica, consiste en:\n\n1. **Editar**: Escribir y modificar el código fuente (.c).\n2. **Compilar**: Traducirlo a lenguaje máquina (generando el ejecutable).\n3. **Ejecutar**: Lanzar el programa para comprobar su funcionamiento y depurar errores.\n\n¿Quieres que profundicemos en alguna de estas fases o pasamos a ver los errores de compilación comunes?"
+
+  utter_ask_entorno_programacion:
+    - text: "El entorno de programación es el conjunto de herramientas que se usan para crear programas, por ejemplo editor de código, compilador y terminal o entorno de ejecución."
+
+  utter_ask_estructura_programa_c:
+  - text: |
+      Un programa básico en C suele incluir librerías con #include, la función principal main() y dentro de ella las instrucciones que se van a ejecutar.
+
+      Ejemplo:
+
+      #include <stdio.h>
+
+      int main() {{
+          printf("Hola mundo");
+          return 0;
+      }}
+
+  utter_ask_funcion_main:
+  - text: "La función main() es el punto de entrada de cualquier programa en C. Cuando se ejecuta el programa, la ejecución comienza en esta función y desde ella se llama al resto del código."
+
+  utter_ask_comentarios_c:
+    - text: "Los comentarios sirven para documentar el código y no se ejecutan. En C puedes usar // para una línea y /* ... */ para bloques."
+
+  utter_ask_librerias_include:
+  - text: "La directiva #include se utiliza para incorporar librerías a un programa en C. Las librerías contienen funciones ya definidas que puedes utilizar sin tener que programarlas tú mismo. Por ejemplo, la librería stdio.h permite usar funciones como printf() y scanf(). Si no incluyes la librería necesaria, el compilador no reconocerá esas funciones y el programa puede dar errores."
+
+  utter_ask_compilador:
+    - text: "Un compilador es un programa que traduce el código fuente escrito en un lenguaje como C a un lenguaje que el ordenador puede ejecutar."
+
+
+  #TEORIA-VARIABLES Y TIPOS
+  utter_ask_que_es_variable:
+    - text: "Una variable es un espacio en memoria donde se almacena un valor que puede cambiar durante la ejecución de un programa."
+
+  utter_ask_declaracion_variable:
+    - text: "Declarar una variable es indicar su tipo y su nombre, por ejemplo: int x;"
+
+  utter_ask_inicializacion_variable:
+    - text: "Inicializar una variable es asignarle un valor en el momento de declararla, por ejemplo: int x = 5."
+
+  utter_ask_tipos_datos:
+    - text: "Los tipos de datos básicos son int para enteros, float y double para números reales y char para caracteres."
+
+  utter_ask_booleanos:
+    - text: "Un booleano es un tipo de dato que solo puede tomar dos valores: true o false."
+
+  utter_ask_tamano_datos:
+  - text: |
+      Los datos en C se almacenan en memoria utilizando bits y bytes. Un byte equivale a 8 bits.
+
+      Cada tipo de dato ocupa una cantidad diferente de memoria. Aunque puede variar según el compilador y la arquitectura, lo habitual es:
+
+      - char: 1 byte
+      - int: 4 bytes
+      - float: 4 bytes
+      - double: 8 bytes
+
+      Los tipos que ocupan más memoria pueden representar un mayor rango de valores o una mayor precisión.
+
+  utter_ask_casting:
+  - text: |
+      El casting es la conversión de un tipo de dato a otro. Se utiliza cuando queremos tratar un valor como si fuera de otro tipo.
+
+      Por ejemplo:
+
+      ```c
+      float resultado = (float)5 / 2;
+      ```
+
+      En este caso, `(float)5` convierte el número entero `5` en un número decimal antes de realizar la división, obteniendo como resultado `2.5` en lugar de `2`.
+
+  utter_ask_asignacion_variable:
+    - text: |
+        Asignar un valor a una variable significa **darle un dato** para que lo almacene.
+        
+        Por ejemplo:
+        ```c
+        int edad;
+        edad = 20;
+        ```
+        
+        Aquí, primero se declara la variable `edad` y después se le asigna el valor `20`.
+        
+        La asignación se hace con el operador `=`.
+
+    - text: |
+        La **asignación de una variable** consiste en guardar un valor dentro de ella.
+        
+        Ejemplo:
+        ```c
+        int numero;
+        numero = 5;
+        ```
+        
+        Después de esa asignación, la variable `numero` vale `5`.
+
+    - text: |
+        Cuando asignas un valor a una variable, estás haciendo que esa variable **guarde información**.
+        
+        Ejemplo:
+        ```c
+        float nota;
+        nota = 7.5;
+        ```
+        
+        En este caso, `nota` almacena el valor `7.5`.
+
+  utter_ask_ejemplo_variable:
+    - text: |
+        Claro, aquí tienes un ejemplo sencillo de variable en C:
+        
+        ```c
+        int edad;
+        edad = 20;
+        ```
+        
+        `int` indica el tipo de dato, `edad` es el nombre de la variable y `20` es el valor que se guarda en ella.
+
+    - text: |
+        Este es un ejemplo básico:
+        
+        ```c
+        float altura = 1.65;
+        ```
+        
+        Aquí se declara una variable llamada `altura` de tipo `float` y se inicializa con el valor `1.65`.
+
+    - text: |
+        Otro ejemplo:
+        
+        ```c
+        char letra = 'A';
+        ```
+        
+        En este caso, `letra` es una variable de tipo `char` y almacena el carácter `A`.
+
+  #TEORIA-ENTRADA/SALIDA
+  utter_ask_printf:
+  - text: |
+      La función `printf()` se utiliza para mostrar información por pantalla. Permite imprimir texto, valores de variables o el resultado de expresiones.
+
+      Por ejemplo:
+
+      ```c
+      int edad = 20;
+      printf("Edad: %d", edad);
+      ```
+
+      En este caso, `printf()` muestra en pantalla el texto `Edad: 20`.
+
+  utter_ask_formato_printf:
+    - text: "En printf, %d se usa para enteros, %f para float o double, %c para caracteres y %s para cadenas de caracteres."
+
+  utter_ask_scanf:
+  - text: |
+      La función `scanf()` se utiliza para leer datos que introduce el usuario durante la ejecución del programa y almacenarlos en variables.
+
+      Por ejemplo:
+
+      ```c
+      int edad;
+      scanf("%d", &edad);
+      ```
+
+      En este caso, el usuario introduce un número por teclado y `scanf()` lo guarda en la variable `edad`.
+
+  utter_ask_especificadores_scanf:
+    - text: "En scanf, %d se usa para int, %f para float, %lf para double, %c para char y %s para strings."
+
+  utter_ask_errores_scanf:
+    - text: "Algunos errores comunes con scanf son olvidar el &, usar mal el especificador de formato y problemas con el buffer al leer caracteres o cadenas después de otras entradas."
+
+  utter_ask_entrada_salida:
+    - text: |
+        La **entrada y salida de datos** permite que un programa se comunique con el usuario.
+        
+        - **Entrada**: el usuario introduce datos (por ejemplo, con `scanf`)
+        - **Salida**: el programa muestra información (por ejemplo, con `printf`)
+        
+        Es decir, sirve para **leer datos y mostrarlos por pantalla**.
+
+    - text: |
+        En programación, la **entrada y salida** se usa para interactuar con el usuario.
+        
+        Por ejemplo:
+        - `scanf` → sirve para **leer datos**
+        - `printf` → sirve para **mostrar datos**
+        
+        Gracias a esto, los programas pueden recibir información y devolver resultados.
+
+    - text: |
+        La entrada y salida es la forma en la que un programa **recibe información y muestra resultados**.
+        
+        Por ejemplo:
+        ```c
+        int numero;
+        scanf("%d", &numero);   // entrada
+        printf("%d", numero);  // salida
+        ```
+        
+        Primero se lee un dato y después se muestra por pantalla.
+  
+  utter_ask_ejemplo_entrada_salida:
+    - text: |
+        Aquí tienes un ejemplo sencillo de entrada y salida en C:
+        
+        ```c
+        int numero;
+        scanf("%d", &numero);
+        printf("El numero es: %d", numero);
+        ```
+        
+        El programa lee un número que introduce el usuario y luego lo muestra por pantalla.
+
+    - text: |
+        Otro ejemplo práctico:
+        
+        ```c
+        float nota;
+        scanf("%f", &nota);
+        printf("Tu nota es: %f", nota);
+        ```
+        
+        Primero se pide un dato al usuario y después se imprime.
+
+    - text: |
+        Ejemplo completo:
+        
+        ```c
+        int edad;
+        printf("Introduce tu edad: ");
+        scanf("%d", &edad);
+        printf("Tienes %d años", edad);
+        ```
+        
+        Aquí el programa pide un dato, lo guarda en una variable y luego lo muestra.
+
+  #TEORIA-OPERADORES
+  utter_ask_que_es_operador:
+    - text: |
+        Un **operador** es un símbolo que se utiliza para realizar una operación sobre datos.
+
+        Por ejemplo:
+        - `+` suma
+        - `-` resta
+        - `==` compara
+
+        Sirven para hacer cálculos y tomar decisiones.
+
+  utter_ask_tipos_operadores:
+    - text: |
+        En C hay varios tipos de operadores:
+
+        - Aritméticos → cálculos (`+`, `-`, `*`)
+        - Relacionales → comparaciones (`==`, `!=`)
+        - Lógicos → condiciones (`&&`, `||`)
+        - Asignación → guardar valores (`=`)
+
+  utter_ask_para_que_sirven_operadores:
+    - text: |
+        Los operadores sirven para trabajar con datos.
+
+        Permiten:
+        - hacer cálculos
+        - comparar valores
+        - crear condiciones
+
+        Son fundamentales en cualquier programa.
+
+  utter_ask_como_usar_operadores:
+    - text: |
+        Los operadores se usan dentro de expresiones.
+
+        Ejemplo:
+        ```c
+        int a = 5 + 3;
+        ```
+
+        Aquí `+` suma los valores.
+
+  utter_ask_ejemplo_operadores:
+    - text: |
+        Ejemplo:
+        ```c
+        int a = 5;
+        int b = 3;
+        int suma = a + b;
+        ```
+
+        Se usa `+` para sumar.
+
+  utter_ask_operadores_aritmeticos:
+    - text: |
+        Los operadores aritméticos sirven para hacer cálculos.
+
+        Ejemplos:
+        - `+` suma
+        - `-` resta
+        - `*` multiplica
+        - `/` divide
+
+  utter_ask_operadores_relacionales:
+    - text: |
+        Los operadores relacionales comparan valores.
+
+        Ejemplos:
+        - `==` igual
+        - `!=` distinto
+        - `<` menor que
+        - `>` mayor que
+
+  utter_ask_operadores_logicos:
+    - text: |
+        Los operadores lógicos combinan condiciones.
+
+        Ejemplos:
+        - `&&` → y
+        - `||` → o
+        - `!` → no
+
+  utter_ask_operador_suma:
+    - text: |
+        El operador `+` sirve para sumar valores.
+
+        Ejemplo:
+        ```c
+        int suma = 5 + 3;
+        ```
+
+  utter_ask_operador_igual:
+  - text: |
+      El operador `==` se utiliza para comprobar si dos valores son iguales. Si la comparación es verdadera, la condición se cumple.
+
+      Por ejemplo:
+
+      ```c
+      if (a == b) {{
+          printf("Son iguales");
+      }}
+      ```
+
+      En este caso, el mensaje solo se mostrará si `a` y `b` tienen el mismo valor.
+
+  utter_ask_operador_diferente:
+  - text: |
+      El operador `!=` se utiliza para comprobar si dos valores son diferentes. Si los valores no son iguales, la condición es verdadera.
+
+      Por ejemplo:
+
+      ```c
+      if (a != b) {{
+          printf("Son diferentes");
+      }}
+      ```
+
+      En este caso, el mensaje solo se mostrará si `a` y `b` tienen valores distintos.
+
+  utter_ask_operador_asignacion:
+  - text: |
+      El operador `=` se utiliza para asignar un valor a una variable. No compara valores, sino que almacena un dato en la variable situada a la izquierda.
+
+      Por ejemplo:
+
+      ```c
+      int a;
+      a = 5;
+      ```
+
+      En este caso, la variable `a` pasa a almacenar el valor `5`.
+
+  utter_ask_operador_modulo:
+    - text: |
+        El operador módulo (%) devuelve el resto de una división entera.
+
+        Por ejemplo, si escribimos:
+
+        int resto = 7 % 3;
+
+        El resultado es 1, porque 7 dividido entre 3 da 2 y sobra 1.
+
+        Se usa mucho para comprobar si un número es par o impar. Por ejemplo:
+
+        if ((numero % 2 == 0)) {{
+            printf(("El numero es par"));
+        }}
+
+        En este caso, si el resto de dividir entre 2 es 0, el número es par.
+
+  utter_ask_diferencia_division_modulo:
+    - text: |
+        En C, el operador / y el operador % se usan para cosas distintas:
+
+        / devuelve el cociente de la división.
+        % devuelve el resto de la división.
+
+        Por ejemplo:
+
+        int cociente = 7 / 3;
+        int resto = 7 % 3;
+
+        En este caso:
+        cociente vale 2
+        resto vale 1
+
+        Usa / cuando quieras saber cuántas veces cabe un número en otro.
+        Usa % cuando quieras saber lo que sobra al dividir.
+
+  #TEORIA-CONDICIONALES
+  utter_ask_que_es_condicional:
+  - text: |
+      Un condicional permite ejecutar un bloque de código únicamente cuando se cumple una determinada condición.
+
+      Por ejemplo:
+
+      ```c
+      int a = 5;
+
+      if (a > 0) {{
+          printf("El número es positivo");
+      }}
+      ```
+
+      En este caso, como `a` es mayor que `0`, la condición es verdadera y se muestra el mensaje por pantalla.
+
+  utter_ask_como_hacer_condicion:
+  - text: |
+      Para crear una condición en C se utiliza normalmente la sentencia `if`, seguida de una expresión entre paréntesis.
+
+      Sintaxis:
+
+      ```c
+      if (condicion) {{
+          // instrucciones
+      }}
+      ```
+
+      Por ejemplo:
+
+      ```c
+      if (a > b) {{
+          printf("a es mayor");
+      }}
+      ```
+
+      Si la condición `a > b` es verdadera, se ejecuta el código que está dentro de las llaves.
+
+  utter_ask_ejemplo_if:
+  - text: |
+      Un ejemplo sencillo de una sentencia `if` es el siguiente:
+
+      ```c
+      int a = 5;
+
+      if (a > 0) {{
+          printf("El número es positivo");
+      }}
+      ```
+
+      Como la variable `a` vale `5`, la condición `a > 0` es verdadera y se muestra el mensaje `El número es positivo`.
+
+  utter_ask_sentencia_if:
+  - text: |
+      La sentencia `if` permite tomar decisiones dentro de un programa. Solo ejecuta el bloque de código que contiene cuando la condición indicada es verdadera. Si la condición es falsa, ese bloque no se ejecuta.
+
+      Por ejemplo:
+
+      ```c
+      int a = 5;
+
+      if (a == 5) {{
+          printf("Vale 5");
+      }}
+      ```
+
+      En este caso, como `a` vale `5`, la condición `a == 5` es verdadera y se muestra el mensaje `Vale 5`. Si `a` tuviera otro valor, el código dentro del `if` no se ejecutaría.
+
+  utter_ask_sentencia_if_else:
+  - text: |
+      La estructura `if else` permite elegir entre dos caminos. Si la condición del `if` es verdadera, se ejecuta el bloque del `if`; si es falsa, se ejecuta el bloque del `else`.
+
+      Por ejemplo:
+
+      ```c
+      int a = -3;
+
+      if (a > 0) {{
+          printf("Positivo");
+      }} else {{
+          printf("Negativo o cero");
+      }}
+      ```
+
+      En este caso, como `a` vale `-3`, la condición `a > 0` es falsa y se ejecuta el bloque del `else`.
+
+  utter_ask_sentencia_switch:
+  - text: |
+      La sentencia `switch` permite elegir entre varias opciones en función del valor de una variable o expresión. Cada opción se define mediante un `case`, y si ninguna coincide, puede ejecutarse el bloque `default`.
+
+      Por ejemplo:
+
+      ```c
+      switch (a) {{
+          case 1:
+              printf("Uno");
+              break;
+          case 2:
+              printf("Dos");
+              break;
+          default:
+              printf("Otro valor");
+      }}
+      ```
+
+      En este ejemplo, se ejecutará únicamente el `case` cuyo valor coincida con `a`. Si ninguno coincide, se ejecutará el bloque `default`.
+
+  utter_ask_cuando_usar_switch:
+  - text: |
+      Utiliza `switch` cuando quieras comparar una misma variable con varios valores posibles.
+
+      En cambio, `if` es más adecuado cuando las condiciones son más complejas o utilizan operadores como `>`, `<`, `>=` o combinaciones con `&&` y `||`.
+
+  utter_ask_ejemplo_switch:
+  - text: |
+      Un ejemplo sencillo de una sentencia `switch` es el siguiente:
+
+      ```c
+      int opcion = 2;
+
+      switch (opcion) {{
+          case 1:
+              printf("Has elegido la opción 1");
+              break;
+
+          case 2:
+              printf("Has elegido la opción 2");
+              break;
+
+          default:
+              printf("Opción no válida");
+      }}
+      ```
+
+      En este ejemplo, como `opcion` vale `2`, se ejecuta el `case 2` y se muestra el mensaje `Has elegido la opción 2`. Si `opcion` tuviera otro valor distinto de `1` o `2`, se ejecutaría el bloque `default`.
+
+  utter_ask_break_switch:
+  - text: |
+      En una sentencia `switch`, la instrucción `break` se utiliza para salir del `case` que se está ejecutando. De este modo, se evita que el programa continúe ejecutando los siguientes `case`.
+
+      Por ejemplo:
+
+      ```c
+      switch (opcion) {{
+          case 1:
+              printf("Opción 1");
+              break;
+
+          case 2:
+              printf("Opción 2");
+              break;
+      }}
+      ```
+
+      Si `opcion` vale `1`, se mostrará `Opción 1` y, gracias al `break`, el programa saldrá del `switch` sin ejecutar el `case 2`. Si no hubiera `break`, el programa continuaría ejecutando también el siguiente `case`.
+
+  #TEORIA-BUCLES
+  utter_ask_que_es_bucle:
+    - text: |
+        Un **bucle** es una estructura de control que permite **repetir instrucciones varias veces**.
+
+        Se usa cuando quieres que una acción se ejecute más de una vez sin escribir el mismo código repetido.
+
+        En C, los bucles más habituales son:
+        - `while`
+        - `do while`
+        - `for`
+
+    - text: |
+        Los **bucles** sirven para repetir un bloque de instrucciones mientras se cumpla una condición o durante un número determinado de veces.
+
+        Son muy útiles para recorrer datos, hacer cálculos repetitivos o automatizar tareas dentro de un programa.
+
+  utter_ask_como_hacer_bucle:
+    - text: |
+        Para hacer un bucle en C, normalmente usas una estructura como `while` o `for`.
+
+        Por ejemplo, con `while`:
+
+        ```c
+        int i = 0;
+        while (i < 5) {{
+            printf("%d\n", i);
+            i++;
+        }}
+        ```
+
+        Ese código repite las instrucciones mientras `i < 5`.
+
+    - text: |
+        Si quieres repetir algo en programación, puedes usar un bucle.
+
+        Ejemplo con `for`:
+
+        ```c
+        for (int i = 0; i < 5; i++) {{
+            printf("%d\n", i);
+        }}
+        ```
+
+        Este bucle se repite 5 veces.
+
+  utter_ask_ejemplo_bucles:
+    - text: |
+        Claro. Aquí tienes un ejemplo de `for`:
+
+        ```c
+        for (int i = 0; i < 3; i++) {{
+            printf("Hola\n");
+        }}
+        ```
+
+        Y un ejemplo de `while`:
+
+        ```c
+        int i = 0;
+        while (i < 3) {{
+            printf("Hola\n");
+            i++;
+        }}
+        ```
+
+    - text: |
+        Ejemplo de `while`:
+
+        ```c
+        int i = 1;
+        while (i <= 5) {{
+            printf("%d\n", i);
+            i++;
+        }}
+        ```
+
+        Ejemplo de `for`:
+
+        ```c
+        for (int i = 1; i <= 5; i++) {{
+            printf("%d\n", i);
+        }}
+        ```
+  utter_ask_bucle_while:
+  - text: |
+      El bucle `while` repite un bloque de instrucciones mientras una condición sea verdadera. La condición se comprueba antes de cada repetición, por lo que el bucle puede no ejecutarse ninguna vez.
+
+      Por ejemplo:
+
+      ```c
+      int i = 1;
+
+      while (i <= 3) {{
+          printf("%d\n", i);
+          i++;
+      }}
+      ```
+
+      En este caso, el bucle muestra los números del 1 al 3. Cuando `i` pasa a valer `4`, la condición deja de cumplirse y el bucle termina.
+
+  utter_ask_bucle_do_while:
+  - text: |
+      El bucle `do while` también repite un bloque de instrucciones mientras una condición sea verdadera. Sin embargo, la condición se comprueba al final, por lo que el bloque de código se ejecuta al menos una vez.
+
+      Por ejemplo:
+
+      ```c
+      int i = 1;
+
+      do {{
+          printf("%d\n", i);
+          i++;
+      }} while (i <= 3);
+      ```
+
+      En este ejemplo, el bucle muestra los números del 1 al 3. Aunque la condición fuera falsa desde el principio, el bloque se ejecutaría una primera vez antes de comprobarla.
+
+  utter_ask_bucle_for:
+  - text: |
+      El bucle `for` se utiliza cuando se conoce de antemano cuántas veces se quiere repetir una acción. En una sola línea reúne la inicialización, la condición y la actualización de la variable de control.
+
+      Por ejemplo:
+
+      ```c
+      for (int i = 1; i <= 3; i++) {{
+          printf("%d\n", i);
+      }}
+      ```
+
+      En este caso, el bucle imprime los números del 1 al 3. La variable `i` comienza en `1`, aumenta en cada iteración y el bucle termina cuando `i` es mayor que `3`.
+
+  utter_ask_bucles_anidados:
+    - text: "Los bucles anidados son estructuras en las que un bucle aparece dentro de otro. Se usan mucho para recorrer tablas, matrices o repeticiones de varios niveles."
+
+  utter_ask_break_bucles:
+  - text: |
+      La instrucción `break` se utiliza para salir inmediatamente de un bucle antes de que termine de forma natural. Cuando se ejecuta, el programa abandona el bucle y continúa con la siguiente instrucción.
+
+      Por ejemplo:
+
+      ```c
+      while (1) {{
+          if (a == 5) {{
+              break;
+          }}
+      }}
+      ```
+
+      En este caso, el bucle se repite hasta que `a` vale `5`. En ese momento se ejecuta `break` y el programa sale del bucle, continuando con el resto del código.
+
+  utter_ask_continue_bucles:
+  - text: |
+      La instrucción `continue` se utiliza para saltar el resto de instrucciones de la iteración actual de un bucle y comenzar directamente la siguiente iteración, siempre que la condición del bucle siga cumpliéndose.
+
+      Por ejemplo:
+
+      ```c
+      for (int i = 1; i <= 5; i++) {{
+          if (i == 3) {{
+              continue;
+          }}
+
+          printf("%d\n", i);
+      }}
+      ```
+
+      En este caso, cuando `i` vale `3` se ejecuta `continue`, por lo que no se imprime ese número. El bucle continúa con la siguiente iteración y el resultado será: `1 2 4 5`.
+
+  utter_ask_diferencia_bucles:
+    - text: "while se usa cuando no sabes cuántas veces vas a repetir, do while cuando además quieres que se ejecute al menos una vez, y for cuando el número de repeticiones está más controlado."
+
+  utter_ask_bucle_infinito:
+    - text: "Un bucle infinito ocurre cuando la condición nunca deja de cumplirse o cuando la variable de control no cambia correctamente dentro del bucle."
+
+
+  #TEORIA-FUNCIONES
+  utter_ask_declaracion_funciones:
+    - text: "La declaración de una función indica su nombre, tipo de retorno y parámetros, pero sin incluir el código. Sirve para que el compilador sepa que la función existe."
+
+  utter_ask_parametros_entrada:
+    - text: "Los parámetros de entrada son las variables que recibe una función para trabajar con ellas. Se definen en la cabecera de la función."
+
+  utter_ask_valor_retorno:
+    - text: "El valor de retorno es el dato que una función devuelve al terminar su ejecución mediante la instrucción return."
+
+  utter_ask_funciones_void:
+    - text: "Una función void es una función que no devuelve ningún valor. Se usa cuando solo se quiere ejecutar código sin obtener resultado."
+
+  utter_ask_estructura_funcion:
+    - text: "Una función tiene la forma: tipo de retorno, nombre, parámetros entre paréntesis y un bloque de instrucciones entre llaves."
+  
+  utter_ask_que_es_funcion:
+    - text: |
+        Una **función** es un bloque de código que realiza una tarea concreta.
+
+        Sirve para organizar mejor el programa, reutilizar código y evitar repetir las mismas instrucciones muchas veces.
+
+        Una función puede recibir datos de entrada mediante parámetros y puede devolver un resultado usando `return`.
+
+    - text: |
+        Las **funciones** permiten dividir un programa en partes más pequeñas y manejables.
+
+        Así, cada función se encarga de una tarea concreta, lo que hace que el código sea más claro, reutilizable y fácil de mantener.
+
+  utter_ask_uso_funciones:
+    - text: |
+        Las funciones se usan para **separar tareas dentro del programa**.
+
+        Por ejemplo, en lugar de escribir muchas veces el mismo código, puedes meterlo dentro de una función y llamarla cuando la necesites.
+
+        Esto hace el programa más ordenado y más fácil de entender.
+
+    - text: |
+        Una función se usa para encapsular una tarea concreta.
+
+        Por ejemplo, podrías hacer una función para sumar dos números, otra para mostrar un menú y otra para validar un dato.
+
+        Así el programa queda mejor organizado.
+
+  utter_ask_llamada_funcion:
+    - text: |
+        **Llamar una función** significa ejecutar el código que contiene.
+
+        Por ejemplo, si tienes esta función:
+
+        ```c
+        int sumar(int a, int b) {{
+            return a + b;
+        }}
+        ```
+
+        puedes llamarla así:
+
+        ```c
+        int resultado = sumar(2, 3);
+        ```
+
+    - text: |
+        Para llamar una función, escribes su nombre y, si hace falta, los valores entre paréntesis.
+
+        Ejemplo:
+
+        ```c
+        saludar();
+        ```
+
+        o, si recibe parámetros:
+
+        ```c
+        suma(4, 5);
+        ```
+
+  utter_ask_paso_parametros:
+    - text: |
+        Pasar parámetros a una función significa enviarle datos cuando la llamas.
+
+        Ejemplo:
+
+        ```c
+        int sumar(int a, int b) {{
+            return a + b;
+        }}
+
+        int resultado = sumar(2, 3);
+        ```
+
+        Aquí `2` y `3` son los valores que se pasan a la función.
+
+    - text: |
+        Los parámetros se pasan escribiendo los valores entre paréntesis al llamar a la función.
+
+        Por ejemplo:
+
+        ```c
+        mostrarNumero(7);
+        ```
+
+        En ese caso, la función recibe el valor `7`.
+
+  utter_ask_diferencia_declarar_definir:
+    - text: |
+        **Declarar** una función es indicar su nombre, tipo de retorno y parámetros, pero **sin escribir el código**.
+
+        **Definir** una función es escribir ya el bloque completo de instrucciones.
+
+        Ejemplo de declaración:
+
+        ```c
+        int sumar(int a, int b);
+        ```
+
+        Ejemplo de definición:
+
+        ```c
+        int sumar(int a, int b) {{
+            return a + b;
+        }}
+        ```
+
+    - text: |
+        La diferencia es que la **declaración** avisa al compilador de que la función existe, mientras que la **definición** contiene la implementación real de la función.
+
+  utter_ask_ejemplo_funcion:
+    - text: |
+        Claro. Aquí tienes un ejemplo sencillo de función:
+
+        ```c
+        int sumar(int a, int b) {{
+            return a + b;
+        }}
+        ```
+
+        Y se puede usar así:
+
+        ```c
+        int resultado = sumar(2, 3);
+        ```
+
+    - text: |
+        Ejemplo de función `void`:
+
+        ```c
+        void saludar() {{
+            printf("Hola\n");
+        }}
+        ```
+
+        Y para llamarla:
+
+        ```c
+        saludar();
+        ```
+
+
+  #TEORIA-ARRAYS
+  utter_ask_arrays:
+    - text: "Un array o vector es una estructura de datos que permite almacenar varios valores del mismo tipo en posiciones consecutivas de memoria."
+
+  utter_ask_arrays_multidimensionales:
+  - text: "Un array multidimensional es un array que tiene dos o más dimensiones. El caso más habitual es una matriz, formada por filas y columnas. Para acceder a un elemento se utilizan varios índices, por ejemplo `matriz[fila][columna]`."
+
+  utter_ask_declaracion_arrays:
+    - text: "Un array o vector se declara indicando el tipo, el nombre y el tamaño entre corchetes. Por ejemplo: int v[10];"
+
+  utter_ask_acceso_arrays:
+    - text: "Se accede a un array mediante índices que empiezan en 0. Por ejemplo, v[0] es el primer elemento."
+
+  utter_ask_memoria_arrays:
+    - text: "Los arrays se almacenan en posiciones consecutivas de memoria, lo que permite acceder a sus elementos mediante índices."
+
+  utter_ask_errores_arrays:
+  - text: "Uno de los errores más comunes al trabajar con arrays es acceder a una posición fuera de sus límites, por ejemplo intentando leer `array[10]` cuando solo tiene 5 elementos. Esto puede provocar resultados incorrectos, comportamientos inesperados o incluso que el programa falle. Para evitarlo, asegúrate siempre de que el índice esté entre `0` y el número de elementos menos uno."
+
+  utter_ask_uso_arrays:
+    - text: |
+        Un **array** se usa para guardar **varios valores del mismo tipo** bajo un mismo nombre.
+
+        En lugar de crear muchas variables separadas, puedes agruparlas dentro de un array y acceder a cada valor mediante su índice.
+
+        Por ejemplo, sirve para guardar notas, edades, temperaturas o cualquier conjunto de datos similares.
+
+    - text: |
+        Los arrays se usan cuando quieres almacenar varios datos del mismo tipo de forma ordenada.
+
+        Luego puedes acceder a cada elemento por su posición: `v[0]`, `v[1]`, `v[2]`, etc.
+
+  utter_ask_recorrido_arrays:
+    - text: |
+        Para recorrer un array normalmente se usa un bucle, muchas veces un `for`.
+
+        Ejemplo:
+
+        ```c
+        int v[3] = {{10, 20, 30}};
+
+        for (int i = 0; i < 3; i++) {{
+            printf("%d\n", v[i]);
+        }}
+        ```
+
+        Así vas leyendo cada elemento uno a uno.
+
+    - text: |
+        Recorrer un array significa ir pasando por todas sus posiciones.
+
+        Lo habitual es hacerlo con un `for`, usando una variable índice que vaya desde `0` hasta el tamaño del array menos 1.
+
+  utter_ask_ejemplo_arrays:
+    - text: |
+        Claro. Aquí tienes un ejemplo sencillo de array:
+
+        ```c
+        int v[4] = {{1, 2, 3, 4}};
+        ```
+
+        Y para acceder al primer elemento:
+
+        ```c
+        printf("%d\n", v[0]);
+        ```
+
+    - text: |
+        Aquí tienes un ejemplo de recorrido de array:
+
+        ```c
+        int v[3] = {5, 6, 7};
+
+        for (int i = 0; i < 3; i++) {{
+            printf("%d\n", v[i]);
+        }}
+        ```
+
+        Ese `for` recorre todas las posiciones del array.
+
+
+  #TEORIA-STRINGS
+  utter_ask_cadenas:
+    - text: "Una cadena es un array de caracteres terminado en el carácter nulo '\\0'. Se usa para almacenar texto. Por ejemplo: char texto[20];"
+
+  utter_ask_cadenas_declaracion:
+    - text: "Una cadena se declara igual que un vector, pero con char. Por ejemplo: char texto[20];"
+
+  utter_ask_cadenas_printf_scanf:
+  - text: "Para trabajar con cadenas en C se suelen utilizar `printf` y `scanf`. Con `printf`, el especificador `%s` permite mostrar una cadena por pantalla. Con `scanf`, `%s` sirve para leer una cadena introducida por el usuario, pero solo lee hasta el primer espacio en blanco, por lo que no es adecuado para frases con varias palabras."
+
+  utter_ask_errores_cadenas:
+  - text: "Los errores más comunes al trabajar con cadenas en C son olvidar el carácter nulo '\\0', no reservar suficiente espacio en el array, utilizar `scanf` sin tener en cuenta que deja de leer al encontrar un espacio y acceder a posiciones fuera de los límites de la cadena. Estos errores pueden provocar que aparezcan caracteres extraños, que la cadena se corte antes de tiempo o incluso errores durante la ejecución del programa."
+
+  utter_ask_cadenas_funciones:
+  - text: "En C, cuando una cadena se pasa a una función, en realidad se pasa la dirección del primer carácter del array. Por ello, la función puede acceder al contenido de la cadena y modificarlo directamente sin necesidad de devolverla. Si no se desea que la función altere la cadena original, se puede utilizar el modificador `const` o trabajar con una copia de la cadena."
+
+  utter_ask_uso_strings:
+    - text: |
+        Los **strings** se usan para almacenar y trabajar con **texto**.
+
+        En C, un string es realmente un array de caracteres terminado en `'\0'`.
+
+        Sirven para guardar palabras, nombres, frases o cualquier secuencia de caracteres.
+
+    - text: |
+        Un string se usa cuando quieres manejar texto dentro del programa.
+
+        Por ejemplo, puedes usarlo para guardar un nombre, una palabra o una frase.
+
+        En C, normalmente se declara como un array de `char`.
+
+  utter_ask_diferencia_string_char:
+    - text: |
+        La diferencia es que un **char** guarda **un solo carácter**, mientras que un **string** guarda una **secuencia de caracteres**.
+
+        Ejemplo de `char`:
+
+        ```c
+        char letra = 'A';
+        ```
+
+        Ejemplo de string:
+
+        ```c
+        char texto[20] = "Hola";
+        ```
+
+    - text: |
+        Un `char` representa un único carácter, como `'a'` o `'7'`.
+
+        Un string representa varias letras juntas, como `"hola"`.
+
+        En C, el string se almacena como un array de caracteres terminado en `'\0'`.
+
+  utter_ask_ejemplo_string:
+    - text: |
+        Claro. Aquí tienes un ejemplo de string:
+
+        ```c
+        char texto[20] = "Hola";
+        ```
+
+        Ese string guarda la palabra `"Hola"` dentro del array `texto`.
+
+    - text: |
+        Ejemplo de string en C:
+
+        ```c
+        char nombre[30];
+        scanf("%s", nombre);
+        printf("%s\n", nombre);
+        ```
+
+        Ahí se lee un string y después se muestra por pantalla.
+
+  utter_ask_strlen:
+    - text: |
+        strlen es una función de la librería string.h que sirve para calcular la longitud de un string.
+
+        Devuelve el número de caracteres de la cadena, sin contar el carácter especial '\0' que marca el final.
+
+        Ejemplo:
+
+        char texto[] = "Hola";
+
+        int longitud = strlen(texto);
+
+        En este caso, longitud valdrá 4.
+
+  utter_ask_strcpy:
+    - text: |
+        strcpy es una función de la librería string.h que sirve para copiar un string en otro.
+
+        Su sintaxis es:
+
+        strcpy(destino, origen);
+
+        Ejemplo:
+
+        char origen[] = "Hola";
+        char destino[20];
+
+        strcpy(destino, origen);
+
+        Después de ejecutarse, destino contendrá el texto "Hola".
+
+  utter_ask_strcmp:
+    - text: |
+        strcmp es una función de la librería string.h que sirve para comparar dos strings.
+
+        Su sintaxis es:
+
+        strcmp(cadena1, cadena2);
+
+        Si ambas cadenas son iguales devuelve 0.
+
+        Ejemplo:
+
+        strcmp("hola", "hola");
+
+        devuelve 0 porque las dos cadenas contienen exactamente el mismo texto.
+
+  utter_ask_strcat:
+    - text: |
+        strcat es una función de la librería string.h que sirve para concatenar strings, es decir, unir una cadena al final de otra.
+
+        Su sintaxis es:
+
+        strcat(destino, origen);
+
+        Ejemplo:
+
+        char texto1[20] = "Hola ";
+        char texto2[] = "mundo";
+
+        strcat(texto1, texto2);
+
+        El resultado será:
+
+        "Hola mundo"
+
+  utter_ask_string_h:
+    - text: |
+        string.h es una librería de C que incluye funciones para trabajar con cadenas de caracteres.
+
+        Algunas de las funciones más utilizadas son:
+
+        - strlen(): calcular la longitud de una cadena.
+        - strcpy(): copiar una cadena.
+        - strcmp(): comparar cadenas.
+        - strcat(): unir cadenas.
+
+        Para utilizar estas funciones es necesario incluir:
+
+        #include <string.h>
+
+
+  #TEORIA-PUNTEROS
+  utter_ask_punteros:
+  - text: "Un puntero es una variable que almacena la dirección de memoria de otra variable en lugar de su valor. Gracias a los punteros es posible acceder y modificar el contenido de una variable de forma indirecta, además de trabajar de manera eficiente con arrays, cadenas, funciones y estructuras dinámicas."
+
+  utter_ask_direcciones_memoria:
+    - text: "Cada variable se guarda en una posición de memoria con una dirección única que la identifica."
+
+  utter_ask_operador_referencia:
+    - text: "El operador & se usa para obtener la dirección de memoria de una variable."
+
+  utter_ask_operador_dereferencia:
+    - text: "El operador * se usa para acceder al valor almacenado en la dirección a la que apunta un puntero."
+
+  utter_ask_declaracion_punteros:
+    - text: "Un puntero se declara indicando el tipo seguido de un asterisco. Por ejemplo: int *p;"
+
+  utter_ask_punteros_arrays:
+  - text: "Los arrays y los punteros están muy relacionados en C, pero no son lo mismo. El nombre de un array representa la dirección de su primer elemento, por lo que puede utilizarse de forma similar a un puntero en muchas operaciones. Sin embargo, un array reserva memoria para almacenar varios elementos, mientras que un puntero es una variable que almacena una dirección de memoria y puede apuntar a distintos lugares."
+
+  utter_ask_punteros_funciones:
+  - text: "Los punteros se utilizan en funciones para acceder y modificar variables desde fuera de la propia función. Al pasar un puntero como parámetro, la función recibe la dirección de memoria de la variable, por lo que puede cambiar su valor original. Esta técnica se conoce como paso por referencia simulado y es muy útil para modificar datos, trabajar con arrays o devolver varios resultados desde una misma función."
+
+  utter_ask_diferencia_operadores_punteros:
+    - text: |
+        La diferencia es esta:
+
+        - `&` se usa para obtener la **dirección de memoria** de una variable.
+        - `*` se usa para acceder al **valor almacenado** en la dirección a la que apunta un puntero.
+
+        Ejemplo:
+
+        ```c
+        int x = 5;
+        int *p = &x;
+        ```
+
+        Aquí `&x` obtiene la dirección de `x`, y `*p` permite acceder al valor de `x`.
+
+    - text: |
+        El operador `&` da una dirección de memoria, mientras que `*` permite leer o modificar el dato que hay en esa dirección.
+
+        Por eso se habla de:
+        - `&` → referencia
+        - `*` → dereferencia
+
+  utter_ask_ejemplo_puntero:
+    - text: |
+        Claro. Aquí tienes un ejemplo sencillo de puntero:
+
+        ```c
+        int x = 10;
+        int *p = &x;
+        ```
+
+        En este ejemplo:
+        - `x` guarda el valor `10`
+        - `p` guarda la dirección de memoria de `x`
+
+        Si haces `*p`, accedes al valor `10`.
+
+    - text: |
+        Ejemplo de puntero en C:
+
+        ```c
+        int numero = 7;
+        int *puntero = &numero;
+
+        printf("%d\n", *puntero);
+        ```
+
+        Ese `printf` muestra el valor al que apunta `puntero`.
+
+  utter_ask_uso_punteros:
+    - text: |
+        Los punteros se usan para trabajar directamente con direcciones de memoria.
+
+        Son útiles, por ejemplo, para:
+        - modificar variables desde funciones
+        - recorrer arrays
+        - reservar memoria dinámica
+        - trabajar con structs y otras estructuras más complejas
+
+    - text: |
+        Un puntero sirve cuando necesitas acceder o modificar datos de forma indirecta, usando su dirección de memoria.
+
+        En C son muy importantes porque permiten un control más directo del funcionamiento interno del programa.
+
+
+  #TEORIA-STRUCTS
+  utter_ask_structs:
+    - text: "Un struct es una estructura que permite agrupar varias variables de distintos tipos bajo un mismo nombre."
+
+  utter_ask_definicion_struct:
+  - text: "Un `struct` se define indicando su nombre y los campos que lo forman entre llaves. Cada campo representa un dato que pertenecerá a la estructura y puede ser de un tipo distinto. Por ejemplo: `struct Persona {{ int edad; char nombre[20]; }};`."
+
+  utter_ask_declaracion_struct:
+  - text: "Una vez definida la estructura, se pueden declarar variables de ese tipo utilizando la palabra clave `struct` seguida del nombre de la estructura. Por ejemplo: `struct Persona p;`. A partir de ese momento, la variable `p` dispondrá de todos los campos definidos en la estructura."
+
+  utter_ask_acceso_struct:
+  - text: "Una vez declarada una variable de tipo `struct`, se puede acceder a cada uno de sus campos utilizando el operador punto (`.`), seguido del nombre del campo. Por ejemplo, si `p` es una variable de tipo `struct Persona`, la expresión `p.edad` permite acceder o modificar el valor del campo `edad`."
+
+  utter_ask_arrays_struct:
+  - text: "Un array de `struct` permite almacenar varias estructuras del mismo tipo en una única variable, igual que un array almacena varios valores del mismo tipo. Cada posición del array contiene una estructura completa y se puede acceder a sus campos utilizando el índice del array y el operador punto. Por ejemplo: `personas[0].edad`. Esta técnica es muy útil para gestionar colecciones de datos, como listas de alumnos, empleados o productos."
+
+  utter_ask_punteros_struct:
+  - text: "Cuando se trabaja con un puntero a un `struct`, no se utiliza el operador punto (`.`), sino el operador flecha (`->`) para acceder a sus campos. Por ejemplo, si `p` es un puntero a una estructura `Persona`, la expresión `p->edad` permite acceder o modificar el campo `edad` de la estructura a la que apunta."
+
+  utter_ask_structs_funciones:
+  - text: "Las estructuras (`struct`) pueden pasarse a funciones por valor o mediante punteros. Si se pasan por valor, la función recibe una copia y los cambios no afectan a la estructura original. Si se pasan mediante un puntero, la función puede modificar directamente la estructura original. Además, una función también puede devolver una estructura como valor de retorno."
+
+  utter_ask_errores_struct:
+  - text: "Los errores más comunes al trabajar con `struct` son no inicializar correctamente sus campos, confundir los operadores `.` y `->`, acceder a campos de un puntero como si fuera una estructura normal o viceversa, y utilizar punteros sin inicializar. Estos errores pueden provocar resultados incorrectos o incluso fallos durante la ejecución del programa."
+
+
+  #MENU POR TEMAS
+  utter_menu_temas:
+    - text: |
+        Estos son los temas sobre los que te puedo ayudar:
+
+        Tema 0 — Introducción a la programación
+        Tema 1 — Variables y tipos de datos
+        Tema 2 — Entrada y salida
+        Tema 3 — Operadores
+        Tema 4 — Condicionales
+        Tema 5 — Bucles
+        Tema 6 — Funciones
+        Tema 7 — Arrays
+        Tema 8 — Strings
+        Tema 9 — Punteros
+        Tema 10 — Structs
+
+        Puedes escribir, por ejemplo:
+        - tema 0
+        - variables
+        - condicionales
+        - punteros
+
+  utter_tema_introduccion:
+    - text: |
+        Has elegido el Tema 0: Introducción a la programación.
+
+        En este tema puedes preguntarme sobre:
+        - qué es un programa
+        - compilar, editar y ejecutar
+        - estructura básica de un programa en C
+        - la función main()
+        - comentarios
+        - librerías como #include
+
+  utter_tema_variables_tipos:
+    - text: |
+        Has elegido el Tema 1: Variables y tipos de datos.
+
+        En este tema puedes preguntarme sobre:
+        - declaración e inicialización de variables
+        - tipos int, float, double y char
+        - variables booleanas
+        - tamaño de los tipos
+        - conversión de tipos o casting
+
+  utter_tema_entrada_salida:
+    - text: |
+        Has elegido el Tema 2: Entrada y salida.
+
+        En este tema puedes preguntarme sobre:
+        - printf
+        - scanf
+        - especificadores de formato
+        - errores comunes con scanf
+
+  utter_tema_operadores:
+    - text: |
+        Has elegido el Tema 3: Operadores.
+
+        En este tema puedes preguntarme sobre:
+        - operadores aritméticos
+        - operadores de asignación
+        - operadores relacionales
+        - operadores lógicos
+        - incremento y decremento
+        - operadores bit a bit
+
+  utter_tema_condicionales:
+    - text: |
+        Has elegido el Tema 4: Condicionales.
+
+        En este tema puedes preguntarme sobre:
+        - if
+        - if else
+        - else if
+        - condicionales anidados
+        - switch
+        - case, default y break
+
+  utter_tema_bucles:
+    - text: |
+        Has elegido el Tema 5: Bucles.
+
+        En este tema puedes preguntarme sobre:
+        - while
+        - do while
+        - for
+        - bucles anidados
+        - break y continue
+
+  utter_tema_funciones:
+    - text: |
+        Has elegido el Tema 6: Funciones.
+
+        En este tema puedes preguntarme sobre:
+        - declaración y definición de funciones
+        - prototipos
+        - parámetros de entrada
+        - valor de retorno
+        - paso por valor
+        - funciones void
+
+  utter_tema_arrays:
+    - text: |
+        Has elegido el Tema 7: Arrays.
+
+        En este tema puedes preguntarme sobre:
+        - declaración de arrays
+        - inicialización
+        - acceso a elementos
+        - recorrido con bucles
+        - arrays multidimensionales
+
+  utter_tema_strings:
+    - text: |
+        Has elegido el Tema 8: Strings.
+
+        En este tema puedes preguntarme sobre:
+        - cadenas de caracteres
+        - strings como arrays de char
+        - lectura y escritura de strings
+        - funciones básicas de strings
+        - errores comunes
+
+  utter_tema_punteros:
+    - text: |
+        Has elegido el Tema 9: Punteros.
+
+        En este tema puedes preguntarme sobre:
+        - direcciones de memoria
+        - operador &
+        - operador *
+        - declaración de punteros
+        - punteros y arrays
+        - punteros y funciones
+
+  utter_tema_structs:
+    - text: |
+        Has elegido el Tema 10: Structs.
+
+        En este tema puedes preguntarme sobre:
+        - definición de struct
+        - declaración de variables struct
+        - acceso a campos con .
+        - arrays de structs
+        - punteros a structs con ->
+
+  utter_ask_campos_struct:
+    - text: "Un campo de un struct es cada una de las variables que contiene. Por ejemplo: struct Persona {{ int edad; char nombre[20]; }}; tiene dos campos: edad y nombre."
+
+  utter_ask_diferencia_acceso_struct:
+    - text: "El operador . se usa cuando tienes la variable struct directamente (p.edad). El operador -> se usa cuando tienes un puntero a struct (p->edad)."
+
+  utter_ask_ejemplo_struct:
+    - text: "Ejemplo: struct Persona {{ int edad; char nombre[20]; }}; Luego puedes usar: struct Persona p; p.edad = 20;"
+
+
+#FALLBACK
+  utter_fallback:
+    - text: |
+        No estoy seguro de haber entendido tu pregunta 
+
+        Puedes:
+        - reformularla
+        - decirme el tema (por ejemplo: "bucles", "punteros", etc.)
+        - o pedirme un minitest de algún tema
+
+        Estoy aquí para ayudarte 
+
+
+
+slots:
+  minitest_activo:
+    type: text
+    mappings:
+      - type: custom
+
+  tema_minitest:
+    type: text
+    mappings:
+      - type: custom
+
+  pregunta_actual:
+    type: text
+    mappings:
+      - type: custom
+
+  puntuacion_minitest:
+    type: float
+    mappings:
+      - type: custom
+  
+  respuestas_minitest:
+    type: list
+    mappings:
+      - type: custom
+
+  modo_conversacion:
+    type: text
+    initial_value: general
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  numero_tema:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: numero_tema
+
+  ejercicio_guiado_activo:
+    type: text
+    mappings:
+      - type: custom
+
+
+
+actions:
+  - action_iniciar_minitest
+  - action_procesar_respuesta_minitest
+  - action_pedir_tema_minitest
+  - action_mostrar_tema
+  - action_respuesta_invalida_minitest
+  - action_gestionar_eleccion_tema
+  - action_pedir_ejercicio_guiado
+  - action_mostrar_ejercicio_guiado
+  - action_ver_progreso
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

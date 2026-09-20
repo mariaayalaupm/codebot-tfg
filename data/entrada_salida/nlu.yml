@@ -1,0 +1,214 @@
+version: "3.1"
+
+# TEMA 2
+
+nlu:
+- intent: ask_entrada_salida
+  examples: |
+    - que es la entrada y salida
+    - que es entrada y salida en c
+    - explicame la entrada y salida
+    - no entiendo la entrada y salida
+    - para que sirve la entrada y salida
+    - que significa entrada y salida en programacion
+    - como funciona la entrada y salida
+    - que es eso de entrada y salida
+    - para que sirve leer y mostrar datos
+    - como meter y sacar datos en c
+    - como introducir y mostrar datos
+    - como se comunican los programas con el usuario
+    - como se leen y se muestran datos
+    - que se usa para entrada y salida
+    - como se hace la entrada y salida en c
+    - que herramientas hay para entrada y salida
+    - entrada y salida q era
+    - no pillo lo de entrada y salida
+    - esto de input output que es
+    - que significa input y output
+    - como hago para que el programa hable con el usuario
+    - como hago para que el usuario meta datos y el programa responda
+
+- intent: ask_printf
+  examples: |
+    - que es printf
+    - para que sirve printf
+    - como mostrar datos por pantalla en c
+    - como imprimir por pantalla en c
+    - explicame printf
+    - como se usa printf
+    - para que se usa printf
+    - que hace printf
+    - como escribir texto por pantalla
+    - como mostrar una variable por pantalla
+    - como sacar informacion por pantalla
+    - como imprimir un numero en c
+    - no entiendo printf
+    - printf que hace
+    - como enseño un dato por pantalla
+    - como muestro texto en c
+    - printf q era
+    - no pillo printf
+    - como hago para que salga algo en pantalla
+    - como imprimo una variable
+    - como saco un mensaje en pantalla
+    - printf sirve para escribir en pantalla?
+    - como hago un mensaje en c
+    - como enseño el resultado de una operacion
+    - como mostrar el valor de una variable
+    - como imprimir una frase
+    - como escribir algo en consola
+
+- intent: ask_formato_printf
+  examples: |
+    - que significan %d %f %c y %s
+    - formato de impresion en c
+    - cuales son los especificadores de printf
+    - como funciona el formato de printf
+    - explicame los formatos de printf
+    - que significa %d en printf
+    - que significa %f en printf
+    - que significa %c en printf
+    - que significa %s en printf
+    - que formato uso para imprimir un entero
+    - que formato uso para imprimir un float
+    - que formato uso para imprimir un char
+    - que formato tengo que poner en printf
+    - como imprimir distintos tipos de datos
+    - no entiendo los formatos de printf
+    - cual es el especificador de formato para cada tipo
+    - no entiendo lo de los porcentajes en printf
+    - que es eso de %d
+    - por que se pone %f
+    - que pongo si quiero imprimir un decimal
+    - que pongo si quiero imprimir una letra
+    - los formatos de printf me lian
+    - que porcentaje uso para imprimir texto
+    - que porcentaje uso para imprimir caracteres
+    - que especificador pongo para un int
+    - que especificador pongo para un decimal
+    - por que hay que poner porcentajes en printf
+
+
+- intent: ask_scanf
+  examples: |
+    - que es scanf
+    - para que sirve scanf
+    - como leer datos con scanf
+    - como se usa scanf
+    - explicame scanf
+    - como introducir datos en c
+    - como leer un numero con scanf
+    - como pedir datos al usuario
+    - como meter datos por teclado
+    - como leer desde teclado en c
+    - scanf que hace
+    - para que se usa scanf
+    - no entiendo scanf
+    - como guardar lo que escribe el usuario
+    - como hacer que el usuario meta datos
+    - como recoger datos del usuario en c
+    - como pedir un numero al usuario
+    - como hacer que el usuario escriba un numero
+    - como leer un valor que mete el usuario
+    - como capturar un numero que escribe el usuario
+    - scanf q era
+    - no pillo scanf
+    - como hago para que el usuario escriba algo
+    - como leo algo que mete el usuario
+    - como pido un dato por teclado
+    - scanf sirve para leer del teclado?
+    - como hago una pregunta al usuario
+    - como pedir la edad al usuario
+    - como guardar un numero que escriben
+    - como leer una respuesta del teclado
+    - como hacer que el programa espere un dato
+
+- intent: ask_especificadores_scanf
+  examples: |
+    - cuales son los especificadores de scanf
+    - que formato se usa en scanf
+    - que significa %d en scanf
+    - diferencia entre %f y %lf
+    - como leer un int con scanf
+    - como leer un char con scanf
+    - como leer un float con scanf
+    - como leer un double con scanf
+    - que formato uso para scanf
+    - que especificador uso para enteros
+    - que especificador uso para float
+    - que especificador uso para char
+    - que tengo que poner en scanf para leer texto
+    - no entiendo los formatos de scanf
+    - que significa cada especificador en scanf
+    - como se lee cada tipo de dato con scanf
+    - que pongo en scanf si quiero leer un decimal
+    - que pongo en scanf para leer una letra
+    - por que para double se usa %lf
+    - me lio con los porcentajes de scanf
+    - los formatos de scanf son iguales que printf?
+    - que especificador uso en scanf para cada tipo
+    - que porcentaje uso para leer un int
+    - que porcentaje uso para leer un double
+    - que especificador pongo para leer caracteres
+    - que diferencia hay entre leer int y float
+    - scanf usa los mismos porcentajes que printf
+
+- intent: ask_errores_scanf
+  examples: |
+    - errores comunes con scanf
+    - por que scanf me da error
+    - que problemas da scanf
+    - por que scanf falla con char
+    - por que scanf no lee bien
+    - que pasa con scanf y el buffer
+    - por que scanf se salta una lectura
+    - por que scanf no guarda bien el valor
+    - por que scanf me lee mal
+    - que errores suele dar scanf
+    - por que falla scanf con cadenas
+    - que hago si scanf no funciona
+    - por que scanf da problemas
+    - por que no me lee el caracter
+    - no entiendo por que scanf falla
+    - problemas tipicos usando scanf
+    - scanf me esta dando problemas
+    - scanf no me funciona
+    - scanf se salta el char
+    - scanf no espera a que escriba
+    - por que scanf pasa de largo
+    - el scanf se me salta una pregunta
+    - no me lee bien con scanf
+    - por que scanf se salta el segundo dato
+    - por que scanf no lee despues de otro scanf
+    - por que se queda un salto de linea en scanf
+    - por que tengo que poner un espacio antes de %c
+    - scanf no me lee la letra
+
+- intent: ask_ejemplo_entrada_salida
+  examples: |
+    - ponme un ejemplo de entrada y salida
+    - ejemplo de printf y scanf
+    - dame un ejemplo de entrada y salida en c
+    - quiero un ejemplo de scanf
+    - quiero un ejemplo de printf
+    - ponme un ejemplo de leer y mostrar datos
+    - ejemplo de como pedir un numero y mostrarlo
+    - como seria un ejemplo de entrada y salida
+    - no entiendo esto ponme un ejemplo
+    - ejemplo practico de entrada y salida
+    - ejemplo sencillo de scanf
+    - ejemplo sencillo de printf
+    - pon un ejemplo con teclado y pantalla
+    - ejemplo de leer un dato del usuario
+    - ejemplo facil de entrada y salida
+    - como pido un numero a un usuario y lo muestro
+    - como pedir un numero y enseñarlo por pantalla
+    - como leer un numero y luego imprimirlo
+    - como introducir un numero y mostrarlo
+    - como hacer que el usuario escriba un numero y verlo en pantalla
+    - ejemplo de pedir un numero al usuario y mostrarlo
+    - ponme un ejemplo facil con printf y scanf
+    - necesito verlo con codigo
+    - ejemplo de pedir edad y mostrarla
+    - ejemplo de pedir un numero por teclado
+    - hazme un ejemplo simple de entrada y salida

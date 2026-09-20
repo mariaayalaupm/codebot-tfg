@@ -1,0 +1,474 @@
+version: "3.1"
+
+# TEMA 3
+
+nlu:
+
+# GENERALES
+- intent: ask_que_es_operador
+  examples: |
+    - que es un operador
+    - que es un operador en programacion
+    - definicion de operador
+    - explicame que es un operador
+    - no entiendo que es un operador
+    - que significa operador
+    - que son los operadores
+    - cual es la funcion de un operador
+    - que hace un operador
+    - explicame los operadores
+    - que es eso de operador
+    - operador que es
+    - que significa operador en c
+    - que es un operador informatico
+    - operador q es
+    - no pillo que es un operador
+    - me explicas operador facil
+    - que es un operador en c explicado facil
+    - que significa operador en un codigo
+    - no entiendo lo de operadores
+    - que significan los operadores
+    - que son operadores
+    - operadores que son
+
+
+- intent: ask_tipos_operadores
+  examples: |
+    - que operadores hay en c
+    - tipos de operadores
+    - que tipos de operadores hay
+    - lista de operadores
+    - que operadores existen
+    - que tipos de operadores hay en c
+    - explicame los tipos de operadores
+    - que clases de operadores hay
+    - que tipos hay de operadores
+    - lista de operadores en c
+    - que operadores puedo usar
+    - que operadores existen en c
+    - cuales son los tipos de operadores
+    - que tipos de operadores entran
+    - cuales son los operadores importantes
+    - que operadores tengo que saberme
+    - me puedes ordenar los tipos de operadores
+    - no se distinguir los tipos de operadores
+    - operadores aritmeticos relacionales y logicos que son
+    - tipos de operadores en c explicados
+    - que tipos de operadores existen y para que sirven
+    - operadores aritmeticos relacionales y logicos
+
+- intent: ask_para_que_sirven_operadores
+  examples: |
+    - para que sirven los operadores
+    - para que sirve un operador
+    - que hacen los operadores
+    - cual es la utilidad de los operadores
+    - para que se usan los operadores
+    - para que sirven en programacion
+    - que hacen los operadores en c
+    - cual es la funcion de los operadores
+    - que hacen los operadores en un programa
+    - para que sirven en c
+    - que utilidad tienen los operadores
+    - explicame para que sirven los operadores
+    - no entiendo para que sirven los operadores
+    - que hacen los operadores exactamente
+    - para que sirven en codigo
+    - para q sirven los operadores
+    - no entiendo para que necesito operadores
+    - para que se usan los signos en c
+    - para que me sirve saber operadores
+
+- intent: ask_como_usar_operadores
+  examples: |
+    - como se usan los operadores
+    - como usar operadores en c
+    - como funcionan los operadores
+    - como utilizar operadores
+    - como se utilizan los operadores
+    - como aplicar operadores
+    - como usar operadores en programacion
+    - explicame como usar operadores
+    - no entiendo como usar operadores
+    - como se ponen los operadores
+    - como se escriben los operadores
+    - como usar operadores en codigo
+    - como funcionan en un programa
+    - como se aplican en un programa
+    - como usar un operador
+    - no se cuando poner cada operador
+    - como se escriben los operadores en c
+    - como meto operadores en una expresion
+    - me lio usando operadores
+    - como hago operaciones en c
+    - me confundo con los operadores
+    - cuando usar cada operador
+    - cual operador tengo que usar
+    - como saber que operador usar
+    - no se cuando usar cada operador
+
+- intent: ask_ejemplo_operadores
+  examples: |
+    - ponme un ejemplo de operadores
+    - ejemplo de operadores
+    - dame un ejemplo de operadores
+    - quiero un ejemplo de operadores
+    - ejemplo de operadores en c
+    - no entiendo los operadores ponme un ejemplo
+    - ejemplo practico de operadores
+    - ejemplo sencillo de operadores
+    - ejemplo con operadores
+    - ejemplo de uso de operadores
+    - como seria un ejemplo de operadores
+    - pon un ejemplo de operadores
+    - ejemplo de operador en c
+    - ejemplo facil de operadores
+    - ponme un ejemplo facil de operadores
+    - hazme un ejemplo con variables y operadores
+    - ejemplo de operadores para entenderlo mejor
+    - explicame operadores con un ejemplo
+
+# TIPOS
+- intent: ask_operadores_aritmeticos
+  examples: |
+    - que son los operadores aritmeticos
+    - operadores aritmeticos
+    - cuales son los operadores aritmeticos
+    - explicame los operadores aritmeticos
+    - que hacen los operadores aritmeticos
+    - para que sirven los operadores aritmeticos
+    - ejemplos de operadores aritmeticos
+    - que operadores aritmeticos hay
+    - lista de operadores aritmeticos
+    - operadores matematicos en c
+    - que es suma resta multiplicacion division en c
+    - operadores de calculo
+    - operadores para calcular
+    - operadores de matematicas en c
+    - operadores aritmeticos en c
+    - que son + - * / en c
+    - como hago sumas y divisiones en c
+    - no entiendo los operadores matematicos
+    - operadores aritmeticos explicado facil
+    - no entiendo operadores aritmeticos
+    - explicame los operadores matematicos
+
+
+- intent: ask_operadores_relacionales
+  examples: |
+    - que son los operadores relacionales
+    - operadores relacionales
+    - cuales son los operadores relacionales
+    - explicame los operadores relacionales
+    - que hacen los operadores relacionales
+    - para que sirven los operadores relacionales
+    - ejemplos de operadores relacionales
+    - que operadores relacionales hay
+    - lista de operadores relacionales
+    - operadores de comparacion
+    - operadores para comparar
+    - operadores de comparacion en c
+    - comparadores en c
+    - operadores de igualdad y desigualdad
+    - operadores relacionales en c
+    - como comparo dos variables en c
+    - que operadores uso para comparar
+    - no entiendo mayor menor igual
+    - como se pregunta si algo es igual en c
+    - operadores relacionales explicado facil
+    - comparaciones en c como van
+    - no entiendo los operadores relacionales
+    - explicame comparaciones en c
+    - como saber si dos variables son iguales
+    - como comparar valores en c
+    - como comprobar igualdad
+    - como se si dos cosas son iguales
+    - como saber si dos valores son iguales
+
+
+- intent: ask_operadores_logicos
+  examples: |
+    - que son los operadores logicos
+    - operadores logicos
+    - cuales son los operadores logicos
+    - explicame los operadores logicos
+    - que hacen los operadores logicos
+    - para que sirven los operadores logicos
+    - ejemplos de operadores logicos
+    - que operadores logicos hay
+    - lista de operadores logicos
+    - operadores and or not
+    - operadores && || !
+    - operadores booleanos
+    - operadores logicos en c
+    - que es && en c
+    - que es || en c
+    - que es and or not en c
+    - no entiendo && y ||
+    - como junto varias condiciones
+    - que significa el doble ampersand
+    - que significa la doble barra
+    - que significa la exclamacion en c
+    - operadores logicos explicado facil
+    - me lio con and y or
+    - no entiendo los operadores logicos
+    - explicame and or y not
+    - que hace !
+    - que significa ! en c
+    - que hace ! en c
+    - que significa !
+    - como funciona not en c
+    - para que sirve la negacion
+    - que hace la negacion
+    - que significa la negacion
+    - para que sirve la negacion logica
+    - operador negacion en c
+    - no entiendo la negacion
+    - como funciona la negacion
+    - negacion logica en c
+    - negar una condicion en c
+    - como poner dos condiciones juntas
+    - como hacer que se cumplan dos condiciones
+    - como hacer que valga una condicion u otra
+    - como combinar condiciones en un if
+
+# ESPECIFICOS
+- intent: ask_operador_suma
+  examples: |
+    - que es el operador +
+    - que hace el operador +
+    - para que sirve +
+    - operador suma
+    - que significa +
+    - como funciona +
+    - explicame el operador +
+    - no entiendo el operador +
+    - para que sirve sumar en c
+    - como se usa el +
+    - que hace + en c
+    - operador de suma en c
+    - suma en programacion
+    - como sumar en c
+    - uso del operador +
+    - como sumo dos variables
+    - como se suma en c
+    - el mas que hace en c
+    - + sirve solo para sumar?
+    - no entiendo el operador mas
+    - como funciona la suma en c
+    - que hace el operador mas
+    - que significa el operador mas
+    - para que sirve el operador mas
+    - operador mas en c
+    - simbolo mas en c
+    - como funciona el operador mas
+
+
+- intent: ask_operador_igual
+  examples: |
+    - que hace ==
+    - que significa ==
+    - operador doble igual
+    - para que sirve ==
+    - que hace el operador ==
+    - diferencia entre = y ==
+    - cuando usar = o ==
+    - explicame ==
+    - no entiendo ==
+    - comparacion de igualdad
+    - como funciona ==
+    - que hace comparar igualdad
+    - operador de comparacion ==
+    - cuando usar ==
+    - uso de ==
+    - igualdad con doble igual en c
+    - cuando tengo que usar doble igual
+    - como comparo si dos cosas son iguales
+    - que diferencia hay entre asignar y comparar
+    - que hace el doble igual
+    - que significa el doble igual
+    - para que sirve el doble igual
+    - cuando usar el doble igual
+    - cuando se usa el doble igual
+    - no entiendo el doble igual
+    - operador doble igual
+    - doble igual en c
+    - doble igual que hace
+    - doble igual para comparar
+    - como funciona el doble igual
+    - para comparar se usa doble igual
+    - doble igual
+    - que significa dos iguales
+    - que hacen dos iguales
+    - para que sirven dos iguales
+    - dos iguales en c
+
+- intent: ask_operador_diferente
+  examples: |
+    - que hace !=
+    - que significa !=
+    - operador diferente
+    - para que sirve !=
+    - que hace el operador !=
+    - desigualdad en c
+    - explicame !=
+    - no entiendo !=
+    - comparacion de desigualdad
+    - como funciona !=
+    - operador de desigualdad
+    - cuando usar !=
+    - uso de !=
+    - diferente en c
+    - que significa distinto en c
+    - != q significa
+    - que significa exclamacion igual
+    - como digo distinto en c
+    - como comparo si dos cosas son diferentes
+    - cuando uso !=
+    - que hace distinto de
+    - que significa distinto de
+    - para que sirve distinto de
+    - cuando usar distinto de
+    - no entiendo distinto de
+    - operador distinto de
+    - distinto de en c
+    - distinto de que hace
+    - diferente de en c
+    - operador diferente de
+    - como funciona distinto de
+    - para comparar si dos cosas son distintas
+
+- intent: ask_operador_asignacion
+  examples: |
+    - que hace =
+    - que significa =
+    - operador igual simple
+    - para que sirve =
+    - que hace el operador =
+    - asignacion en c
+    - explicame =
+    - no entiendo =
+    - guardar valor en variable
+    - como funciona =
+    - operador de asignacion
+    - cuando usar =
+    - uso de =
+    - igual en c asignacion
+    - como asignar valores
+    - como guardo un valor en una variable
+    - como le doy valor a una variable
+    - no entiendo asignar con =
+    - como funciona la asignacion
+    - no entiendo el igual
+    - que hace el igual simple
+    - que significa el igual simple
+    - que significa un solo igual
+    - para que sirve el igual simple
+    - cuando usar el igual simple
+    - no entiendo el igual simple
+    - operador igual simple que hace
+    - igual simple para asignar
+    - igual simple en c
+    - que hace un solo igual
+    - q hace un solo igual
+    - asignar con igual simple
+    - para guardar un valor uso igual simple
+    - como funciona el igual simple
+    - como meter un valor en una variable
+    - como inicializar una variable
+    - como cambiar el valor de una variable
+
+- intent: ask_operador_modulo
+  examples: |
+    - que hace el operador modulo
+    - para que sirve %
+    - que significa % en c
+    - como funciona el modulo
+    - que es el operador modulo
+    - que es modulo en c
+    - que significa modulo en programacion
+    - que hace %
+    - para que sirve el operador %
+    - para que sirve modulo en c
+    - explicame el operador modulo
+    - explicame que hace %
+    - no entiendo el operador modulo
+    - no entiendo para que sirve %
+    - como se usa el modulo en c
+    - como usar el operador modulo
+    - cuando se usa %
+    - cuando uso el operador modulo
+    - que devuelve el operador modulo
+    - que resultado da %
+    - modulo que hace
+    - operador modulo que hace
+    - operador % que hace
+    - uso de modulo en c
+    - uso del operador %
+    - ejemplo de operador modulo
+    - ejemplo de % en c
+    - ponme un ejemplo de modulo
+    - ponme un ejemplo usando %
+    - para que se usa el resto de una division
+    - el porcentaje en c que significa
+    - el simbolo % que hace en c
+    - q hace %
+    - k hace %
+    - q significa % en c
+    - ke es modulo en c
+    - no pillo el operador modulo
+    - me lio con el %
+    - que hace el operador resto
+    - que significa operador resto
+    - para que sirve el operador resto
+    - resto de una division en c
+    - calcular el resto de una division
+    - operador resto en c
+    - modulo es el resto
+    - modulo devuelve el resto
+    - como sacar el resto de una division
+    - no entiendo el operador resto
+    - para saber si sobra algo en una division
+    - como saber si un numero es par
+    - como saber si un numero es impar
+    - como saber si un numero es multiplo de otro
+    - como comprobar si una division tiene resto
+    
+
+- intent: ask_diferencia_division_modulo
+  examples: |
+    - diferencia entre / y %
+    - diferencia entre dividir y modulo
+    - cuando usar / o %
+    - que diferencia hay entre / y %
+    - que diferencia hay entre division y modulo
+    - diferencia entre division y resto
+    - diferencia entre cociente y resto
+    - cuando uso la division y cuando el modulo
+    - cuando se usa / y cuando se usa %
+    - no entiendo la diferencia entre / y %
+    - no entiendo cuando usar modulo o division
+    - explicame la diferencia entre division y modulo
+    - explicame cuando usar / o %
+    - para que sirve / y para que sirve %
+    - que hace / y que hace %
+    - / y % que diferencia tienen
+    - dividir y modulo no es lo mismo
+    - modulo y division en c diferencia
+    - diferencia entre operador / y operador %
+    - diferencia entre operador division y operador modulo
+    - que devuelve / y que devuelve %
+    - cuando quiero el cociente uso / o %
+    - cuando quiero el resto uso / o %
+    - como se si usar / o %
+    - me confundo entre / y %
+    - me lio con division y modulo
+    - q diferencia hay entre / y %
+    - k diferencia hay entre / y %
+    - q uso / o %
+    - diferencia entre division y operador resto
+    - diferencia entre dividir y sacar el resto
+    - cuando uso division y cuando uso resto
+    - cuando quiero dividir o sacar el resto
+    - no entiendo la diferencia entre cociente y resto
+    - division devuelve cociente y modulo devuelve resto

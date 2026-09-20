@@ -1,0 +1,228 @@
+version: "3.1"
+
+#TEMA 6
+
+nlu:
+- intent: ask_que_es_funcion
+  examples: |
+    - que es una funcion
+    - que son las funciones
+    - explicame que es una funcion
+    - explicame las funciones
+    - no entiendo las funciones
+    - para que sirve una funcion
+    - para q sirve una funcion
+    - para que sirven las funciones
+    - que hace una funcion
+    - que significa funcion en programacion
+    - que es una funcion en c
+    - que es una funcion en programacion
+    - cual es la idea de una funcion
+    - que utilidad tienen las funciones
+    - para que se usan las funciones
+    - que papel tienen las funciones
+    - funcion q es
+    - no pillo que es una funcion
+    - me explicas funcion facil
+    - no entiendo lo de funciones
+
+- intent: ask_uso_funciones
+  examples: |
+    - como se usan funciones
+    - como se usan las funciones
+    - como usar funciones
+    - como funciona una funcion
+    - como funcionan las funciones
+    - como van las funciones
+    - como trabajo con funciones
+    - como se utilizan las funciones
+    - como se utiliza una funcion
+    - como puedo usar funciones en c
+    - como hago funciones
+    - uso de funciones
+    - usar funciones en c
+
+- intent: ask_estructura_funcion
+  examples: |
+    - cual es la estructura de una funcion
+    - como esta formada una funcion
+    - partes de una funcion
+    - que partes tiene una funcion
+    - como es la forma de una funcion
+    - estructura de una funcion en c
+    - como se compone una funcion
+    - que lleva una funcion
+    - que elementos tiene una funcion
+    - esquema de una funcion
+    - como se organiza una funcion
+    - forma general de una funcion
+    - donde va el tipo de dato en una funcion
+    - donde va el nombre de la funcion
+    - donde van los parametros
+    - que se pone antes del nombre de la funcion
+
+- intent: ask_declaracion_funciones
+  examples: |
+    - como se declara una funcion
+    - que es declarar una funcion
+    - declaracion de funciones
+    - como declarar funciones en c
+    - como hago la declaracion de una funcion
+    - que pongo para declarar una funcion
+    - como escribir la declaracion de una funcion
+    - como declarar una funcion en programacion
+    - explicame la declaracion de funciones
+    - para que sirve declarar una funcion
+    - cuando se declara una funcion
+    - como va la declaracion de una funcion
+
+- intent: ask_llamada_funcion
+  examples: |
+    - como llamar una funcion
+    - como se llama una funcion
+    - como invocar una funcion
+    - como se invoca una funcion
+    - como ejecutar una funcion
+    - como uso una funcion ya creada
+    - como hago una llamada a una funcion
+    - llamada a funciones
+    - como se utiliza una funcion llamandola
+    - que pongo para llamar una funcion
+    - como se llama a una funcion en c
+    - como activar una funcion
+    - explicame como llamar a funciones
+    - como llamo a una funcion
+    - como uso una funcion en el main
+    - no se como ejecutar una funcion
+    - como se usa una funcion creada
+    - llamada a funcion explicacion
+    - como se aplican las funciones
+    - como meter funciones en un programa
+    - donde se llama una funcion
+    - tengo que llamar la funcion en el main
+    - por que mi funcion no se ejecuta
+    - he creado una funcion pero no hace nada
+    - si no llamo a la funcion se ejecuta
+
+- intent: ask_parametros_entrada
+  examples: |
+    - que es un parametro
+    - que son los parametros
+    - que son los parametros de entrada
+    - funcion con parametros
+    - explicame los parametros
+    - para que sirven los parametros
+    - que hacen los parametros en una funcion
+    - que recibe una funcion
+    - que datos recibe una funcion
+    - que se mete dentro de los parentesis de una funcion
+    - que son las variables de entrada de una funcion
+    - que significa que una funcion tenga parametros
+    - parametros de una funcion
+    - uso de parametros en funciones
+
+- intent: ask_paso_parametros
+  examples: |
+    - como pasar parametros
+    - como se pasan parametros
+    - como pasar datos a una funcion
+    - como darle valores a una funcion
+    - como enviar parametros a una funcion
+    - como meter parametros en una funcion
+    - como introducir parametros en una funcion
+    - como pasar argumentos a una funcion
+    - como mandar valores a una funcion
+    - como recibe datos una funcion
+    - como le paso informacion a una funcion
+    - como se le pasan cosas a una funcion
+    - como usar parametros al llamar una funcion
+    - como paso numeros a una funcion
+    - como pasar variables a una funcion
+    - como van los parametros en una funcion
+    - como le paso una variable a una funcion
+    - como paso un valor desde el main
+    - como mando un numero a una funcion
+    - como paso dos numeros a una funcion
+    - que pongo dentro de los parentesis al llamar la funcion
+
+- intent: ask_valor_retorno
+  examples: |
+    - que es return
+    - return q es
+    - que devuelve una funcion
+    - que es el valor de retorno
+    - para que sirve return
+    - que hace return
+    - que significa devolver un valor
+    - que devuelve una funcion en c
+    - explicame return
+    - que sale de una funcion
+    - que resultado devuelve una funcion
+    - como devuelve algo una funcion
+    - valor de retorno de una funcion
+    - uso de return
+    - cuando se usa return
+    - que se retorna en una funcion
+    - no entiendo el return
+    - como hace una funcion para devolver algo
+    - como guardo lo que devuelve una funcion
+    - donde va el resultado de return
+    - puedo guardar el return en una variable
+    - que pasa despues de hacer return
+    - return termina la funcion
+
+- intent: ask_funciones_void
+  examples: |
+    - que es void
+    - que es una funcion void
+    - para que sirve void
+    - que significa void en una funcion
+    - cuando una funcion es void
+    - para que sirve una funcion void
+    - explicame void
+    - que quiere decir que una funcion sea void
+    - una funcion sin retorno
+    - una funcion que no devuelve nada
+    - que pasa si una funcion no devuelve nada
+    - uso de void en funciones
+    - void q es
+    - cuando uso void
+    - no entiendo void
+    - funcion sin return que es
+    - que diferencia hay entre void y return
+    - una funcion void puede tener return
+    - se puede poner return en una funcion void
+
+- intent: ask_diferencia_declarar_definir
+  examples: |
+    - diferencia entre declarar y definir
+    - diferencia entre definicion y declaracion
+    - en que se diferencian declarar y definir
+    - cual es la diferencia entre declarar y definir una funcion
+    - que diferencia hay entre declarar y definir
+    - declarar o definir una funcion
+    - cuando declarar y cuando definir una funcion
+    - que es declarar y que es definir
+    - no entiendo la diferencia entre declarar y definir
+    - declaracion frente a definicion de funciones
+    - diferencia entre prototipo y definicion
+
+- intent: ask_ejemplo_funcion
+  examples: |
+    - ejemplo de funcion
+    - ponme un ejemplo de funcion
+    - dame un ejemplo de funcion
+    - quiero un ejemplo de funcion
+    - ejemplo de funcion en c
+    - ponme una funcion de ejemplo
+    - dame una funcion de ejemplo
+    - quiero ver una funcion de ejemplo
+    - ejemplo de funcion con parametros
+    - ejemplo sencillo de funcion
+    - ejemplo de una funcion en programacion
+    - pon un ejemplo de funcion
+    - enseñame una funcion de ejemplo
+    - como seria una funcion de ejemplo
+    - quiero ver como es una funcion
+    - no entiendo las funciones ponme un ejemplo
+    - explicame funciones con un ejemplo

@@ -1,0 +1,240 @@
+version: "3.1"
+
+# TEMA 1
+
+nlu:
+- intent: ask_que_es_variable
+  examples: |
+    - que es una variable
+    - que es una variable en programacion
+    - que significa variable
+    - define variable
+    - definicion de variable
+    - explicame que es una variable
+    - no entiendo que es una variable
+    - que es una variable en c
+    - para que sirve una variable
+    - cual es la funcion de una variable
+    - que hace una variable
+    - para que se usan las variables
+    - que son las variables
+    - explicame las variables
+    - que es eso de una variable
+    - que es una variable informatica
+    - no pillo que es una variable
+    - que significa variable en c
+    - variable que era
+    - me explicas variable facil
+    - para q sirve una variable
+    - q es una variable
+
+- intent: ask_declaracion_variable
+  examples: |
+    - como se declara una variable
+    - declarar una variable
+    - como crear una variable
+    - sintaxis para declarar variables
+    - como se define una variable
+    - como escribir una variable
+    - como pongo una variable en c
+    - como hago una variable
+    - como se hace una variable
+    - como declarar variables en c
+    - explicame como declarar una variable
+    - no entiendo como se declara una variable
+    - como se pone una variable
+    - estructura para declarar variables
+    - cual es la sintaxis de una variable
+    - como empezar una variable
+    - no se declarar variables
+    - como escribo una variable en c
+    - como se crea una variable en codigo
+    - q tengo que poner para declarar una variable
+    - me lio declarando variables
+
+- intent: ask_inicializacion_variable
+  examples: |
+    - que es inicializar una variable
+    - inicializacion de variables
+    - como se inicializa una variable
+    - que significa inicializar
+    - que es la inicializacion
+    - explicame que es inicializar una variable
+    - no entiendo la inicializacion de variables
+    - cuando se inicializa una variable
+    - para que sirve inicializar una variable
+    - que pasa al inicializar una variable
+    - inicializar una variable en c
+    - como dar un valor inicial a una variable
+    - que es eso de inicializar
+    - inicializar es darle valor?
+    - q significa inicializar una variable
+    - cuando le doy valor por primera vez a una variable
+    - que diferencia hay entre declarar inicializar y asignar
+    - cuando le doy valor por primera vez
+    - darle valor por primera vez a una variable
+    - que pasa cuando asigno un valor inicial
+    - valor inicial de una variable
+    - inicializar es poner el primer valor
+
+- intent: ask_asignacion_variable
+  examples: |
+    - como se asigna un valor a una variable
+    - como darle un valor a una variable
+    - como guardar un numero en una variable
+    - como guardar un dato en una variable
+    - como meter un valor en una variable
+    - como cambiar el valor de una variable
+    - asignacion de variables
+    - que es asignar un valor
+    - como hacer que una variable valga algo
+    - como poner un numero en una variable
+    - como se guarda texto en una variable
+    - como hago una asignacion
+    - explicame la asignacion de variables
+    - no entiendo como asignar valores a una variable
+    - como darle un dato a una variable
+    - asignar es ponerle un valor?
+    - como cambio lo que vale una variable
+    - como hago que x valga 5
+    - q es asignar en c
+    - no entiendo el igual en una variable
+
+- intent: ask_tipos_datos
+  examples: |
+    - tipos de datos
+    - que tipos de variables hay
+    - tipos de datos basicos
+    - que es int float double char
+    - explicame los tipos de datos
+    - cuales son los tipos de datos
+    - que tipos de datos existen
+    - que tipos de variables existen
+    - cuales son los tipos basicos en c
+    - que significa int
+    - que significa float
+    - que significa double
+    - que significa char
+    - explicame int float double y char
+    - no entiendo los tipos de datos
+    - para que sirve cada tipo de dato
+    - data types en c
+    - no entiendo int float char
+    - que tipo uso para numeros decimales
+    - que tipo uso para letras
+    - q son los tipos de datos
+    - que diferencia hay entre int y float
+    - cuando uso int
+    - cuando uso float
+    - cuando uso double
+    - cuando uso char
+    - que tipo pongo para guardar una edad
+    - que tipo pongo para guardar una nota
+    - que tipo pongo para guardar una letra
+
+- intent: ask_booleanos
+  examples: |
+    - que es un booleano
+    - variables booleanas
+    - tipo bool que es
+    - que valores puede tomar un booleano
+    - que es true y false
+    - que significa bool
+    - que es una variable booleana
+    - para que sirve un booleano
+    - explicame los booleanos
+    - no entiendo el tipo booleano
+    - que puede valer un bool
+    - que representa true
+    - que representa false
+    - como funciona un booleano
+    - que hace una variable bool
+    - bool en c que es
+    - bool que era
+    - boolean en c que es
+    - que significa true false
+    - q es bool
+    - cuando uso un booleano
+    - para que sirve true y false
+    - cuando usar true y false
+    - para que sirve bool
+
+- intent: ask_tamano_datos
+  examples: |
+    - tamaño de los tipos de datos
+    - cuantos bits ocupa un int
+    - cuanto ocupa un float
+    - tamaño en memoria de variables
+    - que es un byte
+    - cuantos bits tiene un byte
+    - cuanto ocupa un char
+    - cuanto ocupa un double
+    - cuantos bytes ocupa un int
+    - cuantos bytes ocupa un float
+    - memoria de los tipos de datos
+    - cuanto espacio ocupa una variable
+    - explicame el tamaño de los tipos de datos
+    - no entiendo lo de bytes y bits
+    - diferencia entre byte y bit
+    - cuanto mide un tipo de dato
+    - no entiendo cuanto ocupa una variable
+    - q son los bits y bytes
+    - cuanto espacio ocupa int
+    - cuanto pesa una variable en memoria
+    - porque un char ocupa menos que un double
+
+- intent: ask_casting
+  examples: |
+    - que es casting
+    - conversion de tipos
+    - cambiar tipo de variable
+    - convertir int a float
+    - casting en programacion
+    - que significa convertir tipos
+    - que es una conversion de tipo
+    - para que sirve el casting
+    - explicame el casting
+    - no entiendo el casting
+    - como pasar de int a double
+    - como convertir un float en int
+    - convertir una variable a otro tipo
+    - cambiar un dato de tipo
+    - casteo en c
+    - como funciona el casting
+    - casteo que es
+    - como casteo una variable
+    - q es castear
+    - como paso un int a float
+    - no entiendo convertir tipos
+    - type casting que significa
+    - por que se pierden los decimales
+    - por que 3.7 pasa a 3
+    - como quitar los decimales
+    - como convertir un decimal en entero
+    - como transformar un numero entero en decimal
+
+- intent: ask_ejemplo_variable
+  examples: |
+    - ponme un ejemplo de variable
+    - ejemplo de variable
+    - dame un ejemplo de variable
+    - ejemplo de variables en c
+    - como seria un ejemplo de variable
+    - quiero ver un ejemplo de variable
+    - pon un ejemplo con una variable
+    - ejemplo de declarar una variable
+    - ejemplo de inicializar una variable
+    - ejemplo de asignacion de variable
+    - me puedes poner un ejemplo de variable
+    - no entiendo las variables ponme un ejemplo
+    - quiero un ejemplo facil de variable
+    - ejemplo con int
+    - ejemplo sencillo de variable
+    - dame un ejemplo de codigo con variables
+    - ejemplo practico de variable
+    - ejemplo de int y float
+    - ejemplo de asignacion
+    - ponme un ejemplo de asignacion
+    - ejemplo de asignar valor a una variable
+    - ejemplo de variable con valor
+    - ejemplo de x igual a 5

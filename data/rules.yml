@@ -1,0 +1,730 @@
+version: "3.1"
+
+rules:
+
+#RESPUESTAS GENERALES
+- rule: Responder saludo
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Responder despedida
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: responder agradecimiento
+  steps:
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- rule: responder confusion
+  steps:
+  - intent: confusion
+  - action: utter_confusion
+
+  
+
+
+#RESPUESTAS ADMINISTRATIVAS
+- rule: Responder fechas de examenes
+  steps:
+  - intent: ask_exam_dates
+  - action: utter_exam_dates
+
+- rule: Responder horario de practicas
+  steps:
+  - intent: ask_lab_schedule
+  - action: utter_lab_schedule
+
+- rule: Responder plazos de entrega
+  steps:
+  - intent: ask_deadlines
+  - action: utter_deadlines
+
+- rule: Responder tutorias
+  steps:
+  - intent: ask_office_hours
+  - action: utter_office_hours
+
+- rule: Responder donde consultar info oficial
+  steps:
+  - intent: ask_where_to_check
+  - action: utter_where_to_check
+
+
+#INTRODUCCION
+- rule: responder que es un programa
+  steps:
+  - intent: ask_que_es_programa
+  - action: utter_ask_que_es_programa
+
+- rule: responder proceso de desarrollo
+  steps:
+  - intent: ask_proceso_desarrollo
+  - action: utter_ask_proceso_desarrollo
+
+- rule: responder entorno de programacion
+  steps:
+  - intent: ask_entorno_programacion
+  - action: utter_ask_entorno_programacion
+
+- rule: responder estructura basica en c
+  steps:
+  - intent: ask_estructura_programa_c
+  - action: utter_ask_estructura_programa_c
+
+- rule: responder funcion main
+  steps:
+  - intent: ask_funcion_main
+  - action: utter_ask_funcion_main
+
+- rule: responder comentarios en c
+  steps:
+  - intent: ask_comentarios_c
+  - action: utter_ask_comentarios_c
+
+- rule: responder include
+  steps:
+  - intent: ask_librerias_include
+  - action: utter_ask_librerias_include
+
+- rule: responder compilador
+  steps:
+  - intent: ask_compilador
+  - action: utter_ask_compilador
+
+
+#TEORIA-VARIABLES Y TIPOS
+- rule: responder que es una variable
+  steps:
+  - intent: ask_que_es_variable
+  - action: utter_ask_que_es_variable
+
+- rule: responder declaracion variable
+  steps:
+  - intent: ask_declaracion_variable
+  - action: utter_ask_declaracion_variable
+
+- rule: responder inicializacion variable
+  steps:
+  - intent: ask_inicializacion_variable
+  - action: utter_ask_inicializacion_variable
+
+- rule: responder tipos de datos
+  steps:
+  - intent: ask_tipos_datos
+  - action: utter_ask_tipos_datos
+
+- rule: responder booleanos
+  steps:
+  - intent: ask_booleanos
+  - action: utter_ask_booleanos
+
+- rule: responder tamaño datos
+  steps:
+  - intent: ask_tamano_datos
+  - action: utter_ask_tamano_datos
+
+- rule: responder casting
+  steps:
+  - intent: ask_casting
+  - action: utter_ask_casting
+
+- rule: Responder sobre asignacion de variable
+  steps:
+    - intent: ask_asignacion_variable
+    - action: utter_ask_asignacion_variable
+
+- rule: Responder con ejemplo de variable
+  steps:
+    - intent: ask_ejemplo_variable
+    - action: utter_ask_ejemplo_variable
+
+
+
+#TEORIA-ENTRADA/SALIDA
+- rule: responder printf
+  steps:
+  - intent: ask_printf
+  - action: utter_ask_printf
+
+- rule: responder formato printf
+  steps:
+  - intent: ask_formato_printf
+  - action: utter_ask_formato_printf
+
+- rule: responder scanf
+  steps:
+  - intent: ask_scanf
+  - action: utter_ask_scanf
+
+- rule: responder especificadores scanf
+  steps:
+  - intent: ask_especificadores_scanf
+  - action: utter_ask_especificadores_scanf
+
+- rule: responder errores scanf
+  steps:
+  - intent: ask_errores_scanf
+  - action: utter_ask_errores_scanf
+
+- rule: Responder sobre entrada y salida
+  steps:
+    - intent: ask_entrada_salida
+    - action: utter_ask_entrada_salida
+
+- rule: Responder con ejemplo de entrada y salida
+  steps:
+    - intent: ask_ejemplo_entrada_salida
+    - action: utter_ask_ejemplo_entrada_salida
+
+
+#TEORIA-OPERADORES
+- rule: responder que es un operador
+  steps:
+    - intent: ask_que_es_operador
+    - action: utter_ask_que_es_operador
+
+- rule: responder tipos de operadores
+  steps:
+    - intent: ask_tipos_operadores
+    - action: utter_ask_tipos_operadores
+
+- rule: responder para que sirven los operadores
+  steps:
+    - intent: ask_para_que_sirven_operadores
+    - action: utter_ask_para_que_sirven_operadores
+
+- rule: responder como usar operadores
+  steps:
+    - intent: ask_como_usar_operadores
+    - action: utter_ask_como_usar_operadores
+
+- rule: responder ejemplo de operadores
+  steps:
+    - intent: ask_ejemplo_operadores
+    - action: utter_ask_ejemplo_operadores
+
+- rule: responder operadores aritmeticos
+  steps:
+    - intent: ask_operadores_aritmeticos
+    - action: utter_ask_operadores_aritmeticos
+
+- rule: responder operadores relacionales
+  steps:
+    - intent: ask_operadores_relacionales
+    - action: utter_ask_operadores_relacionales
+
+- rule: responder operadores logicos
+  steps:
+    - intent: ask_operadores_logicos
+    - action: utter_ask_operadores_logicos
+
+- rule: responder operador suma
+  steps:
+    - intent: ask_operador_suma
+    - action: utter_ask_operador_suma
+
+- rule: responder operador igual
+  steps:
+    - intent: ask_operador_igual
+    - action: utter_ask_operador_igual
+
+- rule: responder operador diferente
+  steps:
+    - intent: ask_operador_diferente
+    - action: utter_ask_operador_diferente
+
+- rule: responder operador asignacion
+  steps:
+    - intent: ask_operador_asignacion
+    - action: utter_ask_operador_asignacion
+
+- rule: Responder operador modulo
+  steps:
+    - intent: ask_operador_modulo
+    - action: utter_ask_operador_modulo
+
+- rule: Responder diferencia division modulo
+  steps:
+    - intent: ask_diferencia_division_modulo
+    - action: utter_ask_diferencia_division_modulo
+
+#TEORIA-CONDICIONALES
+- rule: que es condicional
+  steps:
+    - intent: ask_que_es_condicional
+    - action: utter_ask_que_es_condicional
+
+- rule: como hacer condicion
+  steps:
+    - intent: ask_como_hacer_condicion
+    - action: utter_ask_como_hacer_condicion
+
+- rule: ejemplo if
+  steps:
+    - intent: ask_ejemplo_if
+    - action: utter_ask_ejemplo_if
+
+- rule: sentencia if
+  steps:
+    - intent: ask_sentencia_if
+    - action: utter_ask_sentencia_if
+
+- rule: if else
+  steps:
+    - intent: ask_sentencia_if_else
+    - action: utter_ask_sentencia_if_else
+
+- rule: switch
+  steps:
+    - intent: ask_sentencia_switch
+    - action: utter_ask_sentencia_switch
+
+- rule: cuando usar switch
+  steps:
+    - intent: ask_cuando_usar_switch
+    - action: utter_ask_cuando_usar_switch
+
+- rule: ejemplo switch
+  steps:
+    - intent: ask_ejemplo_switch
+    - action: utter_ask_ejemplo_switch
+
+- rule: break switch
+  steps:
+    - intent: ask_break_switch
+    - action: utter_ask_break_switch
+
+
+#TEORIA-BUCLES
+- rule: responder que es un bucle
+  steps:
+    - intent: ask_que_es_bucle
+    - action: utter_ask_que_es_bucle
+
+- rule: responder como hacer un bucle
+  steps:
+    - intent: ask_como_hacer_bucle
+    - action: utter_ask_como_hacer_bucle
+
+- rule: responder ejemplo de bucles
+  steps:
+    - intent: ask_ejemplo_bucles
+    - action: utter_ask_ejemplo_bucles
+
+- rule: responder bucle while
+  steps:
+    - intent: ask_bucle_while
+    - action: utter_ask_bucle_while
+
+- rule: responder bucle do while
+  steps:
+    - intent: ask_bucle_do_while
+    - action: utter_ask_bucle_do_while
+
+- rule: responder bucle for
+  steps:
+    - intent: ask_bucle_for
+    - action: utter_ask_bucle_for
+
+- rule: responder bucles anidados
+  steps:
+    - intent: ask_bucles_anidados
+    - action: utter_ask_bucles_anidados
+
+- rule: responder break en bucles
+  steps:
+    - intent: ask_break_bucles
+    - action: utter_ask_break_bucles
+
+- rule: responder continue en bucles
+  steps:
+    - intent: ask_continue_bucles
+    - action: utter_ask_continue_bucles
+
+- rule: responder diferencia entre bucles
+  steps:
+    - intent: ask_diferencia_bucles
+    - action: utter_ask_diferencia_bucles
+
+- rule: responder bucle infinito
+  steps:
+    - intent: ask_bucle_infinito
+    - action: utter_ask_bucle_infinito
+
+
+#TEORIA-FUNCIONES
+- rule: responder que es una funcion
+  steps:
+    - intent: ask_que_es_funcion
+    - action: utter_ask_que_es_funcion
+
+- rule: responder uso de funciones
+  steps:
+    - intent: ask_uso_funciones
+    - action: utter_ask_uso_funciones
+
+- rule: responder estructura funcion
+  steps:
+    - intent: ask_estructura_funcion
+    - action: utter_ask_estructura_funcion
+
+- rule: responder declaracion funciones
+  steps:
+    - intent: ask_declaracion_funciones
+    - action: utter_ask_declaracion_funciones
+
+- rule: responder llamada a funciones
+  steps:
+    - intent: ask_llamada_funcion
+    - action: utter_ask_llamada_funcion
+
+- rule: responder parametros entrada
+  steps:
+    - intent: ask_parametros_entrada
+    - action: utter_ask_parametros_entrada
+
+- rule: responder paso de parametros
+  steps:
+    - intent: ask_paso_parametros
+    - action: utter_ask_paso_parametros
+
+- rule: responder valor retorno
+  steps:
+    - intent: ask_valor_retorno
+    - action: utter_ask_valor_retorno
+
+- rule: responder funciones void
+  steps:
+    - intent: ask_funciones_void
+    - action: utter_ask_funciones_void
+
+- rule: responder diferencia declarar definir
+  steps:
+    - intent: ask_diferencia_declarar_definir
+    - action: utter_ask_diferencia_declarar_definir
+
+- rule: responder ejemplo de funcion
+  steps:
+    - intent: ask_ejemplo_funcion
+    - action: utter_ask_ejemplo_funcion
+
+
+#TEORIA-ARRAYS
+- rule: responder arrays
+  steps:
+    - intent: ask_arrays
+    - action: utter_ask_arrays
+
+- rule: responder declaracion arrays
+  steps:
+    - intent: ask_declaracion_arrays
+    - action: utter_ask_declaracion_arrays
+
+- rule: responder acceso arrays
+  steps:
+    - intent: ask_acceso_arrays
+    - action: utter_ask_acceso_arrays
+
+- rule: responder uso arrays
+  steps:
+    - intent: ask_uso_arrays
+    - action: utter_ask_uso_arrays
+
+- rule: responder memoria arrays
+  steps:
+    - intent: ask_memoria_arrays
+    - action: utter_ask_memoria_arrays
+
+- rule: responder recorrido arrays
+  steps:
+    - intent: ask_recorrido_arrays
+    - action: utter_ask_recorrido_arrays
+
+- rule: responder arrays multidimensionales
+  steps:
+    - intent: ask_arrays_multidimensionales
+    - action: utter_ask_arrays_multidimensionales
+
+- rule: responder errores arrays
+  steps:
+    - intent: ask_errores_arrays
+    - action: utter_ask_errores_arrays
+
+- rule: responder ejemplo arrays
+  steps:
+    - intent: ask_ejemplo_arrays
+    - action: utter_ask_ejemplo_arrays
+
+
+#TEORIA-STRINGS
+- rule: responder cadenas
+  steps:
+    - intent: ask_cadenas
+    - action: utter_ask_cadenas
+
+- rule: responder declaracion cadenas
+  steps:
+    - intent: ask_cadenas_declaracion
+    - action: utter_ask_cadenas_declaracion
+
+- rule: responder cadenas printf scanf
+  steps:
+    - intent: ask_cadenas_printf_scanf
+    - action: utter_ask_cadenas_printf_scanf
+
+- rule: responder uso strings
+  steps:
+    - intent: ask_uso_strings
+    - action: utter_ask_uso_strings
+
+- rule: responder diferencia string char
+  steps:
+    - intent: ask_diferencia_string_char
+    - action: utter_ask_diferencia_string_char
+
+- rule: responder errores cadenas
+  steps:
+    - intent: ask_errores_cadenas
+    - action: utter_ask_errores_cadenas
+
+- rule: responder ejemplo string
+  steps:
+    - intent: ask_ejemplo_string
+    - action: utter_ask_ejemplo_string
+
+- rule: responder cadenas funciones
+  steps:
+    - intent: ask_cadenas_funciones
+    - action: utter_ask_cadenas_funciones
+
+- rule: Responder strlen
+  steps:
+    - intent: ask_strlen
+    - action: utter_ask_strlen
+
+- rule: Responder strcpy
+  steps:
+    - intent: ask_strcpy
+    - action: utter_ask_strcpy
+
+- rule: Responder strcmp
+  steps:
+    - intent: ask_strcmp
+    - action: utter_ask_strcmp
+
+- rule: Responder strcat
+  steps:
+    - intent: ask_strcat
+    - action: utter_ask_strcat
+
+- rule: Responder string.h
+  steps:
+    - intent: ask_string_h
+    - action: utter_ask_string_h
+
+
+#TEORIA-PUNTEROS
+- rule: responder punteros
+  steps:
+    - intent: ask_punteros
+    - action: utter_ask_punteros
+
+- rule: responder direcciones memoria
+  steps:
+    - intent: ask_direcciones_memoria
+    - action: utter_ask_direcciones_memoria
+
+- rule: responder operador dereferencia
+  steps:
+    - intent: ask_operador_dereferencia
+    - action: utter_ask_operador_dereferencia
+
+- rule: responder operador referencia
+  steps:
+    - intent: ask_operador_referencia
+    - action: utter_ask_operador_referencia
+
+- rule: responder diferencia operadores punteros
+  steps:
+    - intent: ask_diferencia_operadores_punteros
+    - action: utter_ask_diferencia_operadores_punteros
+
+- rule: responder declaracion punteros
+  steps:
+    - intent: ask_declaracion_punteros
+    - action: utter_ask_declaracion_punteros
+
+- rule: responder ejemplo puntero
+  steps:
+    - intent: ask_ejemplo_puntero
+    - action: utter_ask_ejemplo_puntero
+
+- rule: responder uso punteros
+  steps:
+    - intent: ask_uso_punteros
+    - action: utter_ask_uso_punteros
+
+- rule: responder punteros arrays
+  steps:
+    - intent: ask_punteros_arrays
+    - action: utter_ask_punteros_arrays
+
+- rule: responder punteros funciones
+  steps:
+    - intent: ask_punteros_funciones
+    - action: utter_ask_punteros_funciones
+
+
+
+#TEORIA-STRUCTS
+- rule: responder structs
+  steps:
+    - intent: ask_structs
+    - action: utter_ask_structs
+
+- rule: responder definicion struct
+  steps:
+    - intent: ask_definicion_struct
+    - action: utter_ask_definicion_struct
+
+- rule: responder declaracion struct
+  steps:
+    - intent: ask_declaracion_struct
+    - action: utter_ask_declaracion_struct
+
+- rule: responder acceso struct
+  steps:
+    - intent: ask_acceso_struct
+    - action: utter_ask_acceso_struct
+
+- rule: responder arrays de structs
+  steps:
+    - intent: ask_arrays_struct
+    - action: utter_ask_arrays_struct
+
+- rule: responder punteros a structs
+  steps:
+    - intent: ask_punteros_struct
+    - action: utter_ask_punteros_struct
+
+- rule: responder structs en funciones
+  steps:
+    - intent: ask_structs_funciones
+    - action: utter_ask_structs_funciones
+
+- rule: responder errores structs
+  steps:
+    - intent: ask_errores_struct
+    - action: utter_ask_errores_struct
+
+- rule: responder campos de struct
+  steps:
+    - intent: ask_campos_struct
+    - action: utter_ask_campos_struct
+
+- rule: responder diferencia acceso struct
+  steps:
+    - intent: ask_diferencia_acceso_struct
+    - action: utter_ask_diferencia_acceso_struct
+
+- rule: responder ejemplo de struct
+  steps:
+    - intent: ask_ejemplo_struct
+    - action: utter_ask_ejemplo_struct
+
+
+#MENU POR TEMAS
+- rule: mostrar menu de temas
+  steps:
+      - intent: pedir_menu_temas
+      - action: utter_menu_temas
+
+
+#CONTEXTO
+- rule: gestionar eleccion de tema
+  steps:
+    - intent: elegir_tema
+    - action: action_gestionar_eleccion_tema
+
+
+
+#FALLBACK
+
+- rule: Responder a fallback
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+
+
+#MINITESTS
+- rule: pedir minitest
+  steps:
+    - intent: pedir_minitest
+    - action: action_pedir_tema_minitest
+
+
+
+- rule: responder minitest con a
+  condition:
+    - slot_was_set:
+        - minitest_activo: en_curso
+  steps:
+    - intent: respuesta_a
+    - action: action_procesar_respuesta_minitest
+
+- rule: responder minitest con b
+  condition:
+    - slot_was_set:
+        - minitest_activo: en_curso
+  steps:
+    - intent: respuesta_b
+    - action: action_procesar_respuesta_minitest
+
+- rule: responder minitest con c
+  condition:
+    - slot_was_set:
+        - minitest_activo: en_curso
+  steps:
+    - intent: respuesta_c
+    - action: action_procesar_respuesta_minitest
+
+- rule: Respuesta invalida durante minitest
+  condition:
+    - slot_was_set:
+        - minitest_activo: "en_curso"
+  steps:
+    - intent: respuesta_invalida_minitest
+    - action: action_respuesta_invalida_minitest
+
+- rule: fallback dentro de minitest
+  condition:
+    - slot_was_set:
+        - minitest_activo: en_curso
+  steps:
+    - intent: nlu_fallback
+    - action: action_respuesta_invalida_minitest
+
+
+
+#EJERCICIOS GUIADOS
+- rule: pedir ejercicio guiado
+  steps:
+    - intent: pedir_ejercicio_guiado
+    - action: action_pedir_ejercicio_guiado
+
+- rule: elegir ejercicio guiado
+  condition:
+    - slot_was_set:
+        - ejercicio_guiado_activo: esperando_ejercicio
+  steps:
+    - intent: elegir_ejercicio_guiado
+    - action: action_mostrar_ejercicio_guiado
+
+#PROGRESO
+- rule: ver progreso del alumno
+  steps:
+    - intent: ver_progreso
+    - action: action_ver_progreso

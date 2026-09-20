@@ -1,0 +1,429 @@
+version: "3.1"
+
+#TEMA 8
+
+nlu:
+- intent: ask_cadenas
+  examples: |
+    - que es un string
+    - que es una cadena
+    - que es un cadena
+    - que son los strings
+    - que son las cadenas
+    - que son las cadenas
+    - explicame los strings
+    - explicame las cadenas
+    - no entiendo los strings
+    - no entiendo las cadenas
+    - no entiendo las cadenas
+    - que hace un string
+    - que hace una cadena
+    - que significa string en programacion
+    - que significa cadena en programacion
+    - que significa string
+    - que significa cadena
+    - explicame que es un string
+    - explicame que es una cadena
+    - explicame strings
+    - explicame cadenas
+    - ayudame con cadenas
+    - que es un string en programacion
+    - que es una cadena en programacion
+    - que es un string en c
+    - que es una cadena en c
+    - puedes explicarme las cadenas
+    - que es una cadena de caracteres
+    - que es char[]
+    - que significa char[]
+    - que son los char[]
+    - me lio con los strings
+    - me lio con las cadenas
+    - ke son los strings
+    - ke son las cadenas
+    - q son las cadenas
+    - en clase hemos visto cadenas y no me entero
+    - me puedes explicar los strings de forma facil
+    - me puedes explicar las cadenas de forma facil
+    - me cuesta entender los strings
+    - me cuesta entender las cadenas
+    - cadena de caracteres que es
+    - que significa cadena de caracteres
+    - explicame cadena de caracteres
+
+- intent: ask_cadenas_declaracion
+  examples: |
+    - como se guarda un string
+    - como se guarda una cadena
+    - como guardar un string
+    - como guardar una cadena
+    - como se declara un string
+    - como se declara una cadena
+    - como declarar un string
+    - como declarar una cadena
+    - como declarar una cadena
+    - como se escribe un string
+    - como se escribe una cadena
+    - como se crea un string
+    - como se crea una cadena
+    - declaracion de strings
+    - declaracion de cadenas
+    - como guardar palabras
+    - como guardar texto
+    - como almacenar una cadena
+    - como se almacena un string
+    - como se almacena una cadena
+    - que pongo para guardar un string
+    - que pongo para guardar una cadena
+    - como definir un string
+    - como definir una cadena
+    - como hacer un string en c
+    - como hacer una cadena en c
+    - como escribir una cadena en c
+    - como se hacen strings en c
+    - como se hacen cadenas en c
+    - como crear un string
+    - como crear una cadena
+    - como crear una cadena en c
+    - no se declarar strings
+    - no se declarar cadenas
+    - no se hacer cadenas
+    - como inicializar un string
+    - como inicializar una cadena
+    - como se inicializa una cadena
+    - explicame como declarar cadenas
+    - ayudame con la declaracion de strings
+    - ayudame con la declaracion de cadenas
+    - como hago un string
+    - como hago una cadena
+    - como hago una cadena
+    - como se escriben los strings
+    - como se escriben las cadenas
+    - como guardo texto en una variable
+    - como meter palabras en un string
+    - como meter palabras en una cadena
+    - como guardar una frase en c
+    - como hago para guardar texto
+    - no entiendo como guardar strings
+    - no entiendo como guardar cadenas
+
+- intent: ask_cadenas_printf_scanf
+  examples: |
+    - como leer un string
+    - como leer una cadena
+    - como imprimir un string
+    - como imprimir una cadena
+    - como leer texto
+    - como imprimir texto
+    - como mostrar un string
+    - como mostrar una cadena
+    - como se lee un string
+    - como se lee una cadena
+    - como se imprime un string
+    - como se imprime una cadena
+    - como leer una cadena
+    - como imprimir una cadena
+    - como mostrar una cadena
+    - como se usan printf y scanf con strings
+    - como se usan printf y scanf con cadenas
+    - como meter texto con scanf
+    - como mostrar texto con printf
+    - como leer palabras en c
+    - como imprimir palabras en c
+    - como leer strings por teclado
+    - como leer cadenas por teclado
+    - como introducir una cadena por teclado
+    - como pedir un string al usuario
+    - como pedir una cadena al usuario
+    - como sacar un string por pantalla
+    - como sacar una cadena por pantalla
+    - como mostrar texto en pantalla
+    - no entiendo scanf con strings
+    - no entiendo scanf con cadenas
+    - no entiendo printf con strings
+    - no entiendo printf con cadenas
+
+- intent: ask_uso_strings
+  examples: |
+    - como usar strings
+    - como usar cadenas
+    - como se usan los strings
+    - como se usan las cadenas
+    - como usar un string
+    - como usar una cadena
+    - como se usa un string
+    - como se usa una cadena
+    - como funcionan los strings
+    - como funcionan las cadenas
+    - como funcionan los strings en c
+    - como funcionan las cadenas en c
+    - como funcionan las cadenas en c
+    - como se usan los strings en c
+    - como se usan las cadenas en c
+    - uso de strings
+    - uso de cadenas
+    - para que se usan los strings
+    - para que se usan las cadenas
+    - como trabajar con strings
+    - como trabajar con cadenas
+    - como van los strings
+    - como van las cadenas
+    - para que sirve un string
+    - para que sirve una cadena
+    - cuando usar strings
+    - cuando usar cadenas
+    - como utilizar strings
+    - como utilizar cadenas
+    - como se usan las cadenas
+    - como usar cadenas en c
+    - como trabajar con texto en c
+    - no entiendo para que sirven los strings
+    - no entiendo para que sirven las cadenas
+    - cuando tengo que usar strings
+    - cuando tengo que usar cadenas
+    - para que sirven las cadenas en programacion
+    - en que casos se usan los strings
+    - en que casos se usan las cadenas
+    - no se cuando usar cadenas
+
+- intent: ask_diferencia_string_char
+  examples: |
+    - diferencia entre string y char
+    - diferencia entre cadena y char
+    - diferencia entre char y string
+    - diferencia entre char y cadena
+    - en que se diferencian string y char
+    - en que se diferencian cadena y char
+    - cual es la diferencia entre string y char
+    - cual es la diferencia entre cadena y char
+    - que diferencia hay entre char y string
+    - que diferencia hay entre char y cadena
+    - diferencia entre caracter y string
+    - diferencia entre caracter y cadena
+    - diferencia entre char y cadena
+    - char o string
+    - char o cadena
+    - string frente a char
+    - cadena frente a char
+    - no entiendo la diferencia entre char y string
+    - no entiendo la diferencia entre char y cadena
+    - que es un char y que es un string
+    - que es un char y que es una cadena
+    - string y caracter no es lo mismo
+    - cadena y caracter no es lo mismo
+    - diferencia entre una cadena y un caracter
+    - un string es lo mismo que un char
+    - una cadena es lo mismo que un char
+    - un char y un string es igual
+    - un char y una cadena es igual
+    - los strings son caracteres
+    - las cadenas son caracteres
+    - no entiendo si char y string son lo mismo
+    - no entiendo si char y cadena son lo mismo
+
+- intent: ask_errores_cadenas
+  examples: |
+    - problemas con strings
+    - problemas con cadenas
+    - errores con strings
+    - errores con cadenas
+    - errores comunes en strings
+    - errores comunes en cadenas
+    - fallos con strings
+    - fallos con cadenas
+    - que errores hay con strings
+    - que errores hay con cadenas
+    - problemas al usar cadenas
+    - errores con cadenas
+    - problemas con cadenas
+    - que pasa si me olvido del caracter nulo
+    - errores al guardar texto
+    - errores tipicos con strings
+    - errores tipicos con cadenas
+    - problemas al leer strings
+    - problemas al leer cadenas
+    - no me funcionan los strings
+    - no me funcionan las cadenas
+    - me falla el string
+    - me falla la cadena
+    - porque no funciona mi cadena
+    - estoy teniendo problemas con cadenas
+    - porque me sale basura al imprimir un string
+    - porque me sale basura al imprimir una cadena
+    - porque mi string tiene caracteres raros
+    - porque mi cadena tiene caracteres raros
+    - porque no termina la cadena
+    - que pasa si no pongo el caracter nulo
+    - porque scanf no lee bien el string
+    - porque scanf no lee bien la cadena
+    - porque se corta el texto que escribo
+
+- intent: ask_ejemplo_string
+  examples: |
+    - ejemplo de string
+    - ejemplo de cadena
+    - ponme un ejemplo de string
+    - ponme un ejemplo de cadena
+    - dame un ejemplo de string
+    - dame un ejemplo de cadena
+    - quiero un ejemplo de string
+    - quiero un ejemplo de cadena
+    - ejemplo de cadena
+    - ponme un ejemplo de cadena
+    - dame un ejemplo de cadena
+    - ejemplo de string en c
+    - ejemplo de cadena en c
+    - ejemplo de como guardar un string
+    - ejemplo de como guardar una cadena
+    - ejemplo de como usar un string
+    - ejemplo de como usar una cadena
+    - quiero ver un string de ejemplo
+    - quiero ver una cadena de ejemplo
+    - enseñame un ejemplo de string
+    - enseñame un ejemplo de cadena
+    - como seria un string de ejemplo
+    - como seria una cadena de ejemplo
+    - ejemplo practico de string
+    - ejemplo practico de cadena
+    - ejemplo de char[]
+    - puedes ponerme un ejemplo sencillo de string
+    - puedes ponerme un ejemplo sencillo de cadena
+    - dame un ejemplo facil de cadena
+    - quiero ver un ejemplo en c de string
+    - quiero ver un ejemplo en c de cadena
+    - enseñame como seria un string
+    - enseñame como seria una cadena
+
+- intent: ask_cadenas_funciones
+  examples: |
+    - funciones de string
+    - funciones de cadena
+    - strings y funciones
+    - cadenas y funciones
+    - cadenas y funciones
+    - como se pasan strings a funciones
+    - como se pasan cadenas a funciones
+    - como usar strings en funciones
+    - como usar cadenas en funciones
+    - que pasa con los strings en funciones
+    - que pasa con las cadenas en funciones
+    - como funcionan las cadenas en funciones
+    - strings dentro de funciones
+    - cadenas dentro de funciones
+    - pasar cadenas a funciones
+    - uso de strings en funciones
+    - uso de cadenas en funciones
+    - funciones con strings
+    - funciones con cadenas
+    - cadenas como parametro de funcion
+    - como usar strings en una funcion
+    - como usar cadenas en una funcion
+    - como pasar una cadena a una funcion
+    - no entiendo los strings en funciones
+    - no entiendo las cadenas en funciones
+    - que pasa si paso un string a una funcion
+    - que pasa si paso una cadena a una funcion
+    - como funcionan las cadenas al pasarlas a funciones
+
+- intent: ask_strlen
+  examples: |
+    - que es strlen
+    - para que sirve strlen
+    - que hace strlen
+    - como funciona strlen
+    - como se usa strlen
+    - strlen que hace
+    - strlen para que sirve
+    - longitud de string
+    - longitud de una cadena
+    - como calcular longitud string
+    - como calcular la longitud de un string
+    - como calcular la longitud de una cadena
+    - como saber cuantos caracteres tiene un string
+    - como saber cuantos caracteres tiene una cadena
+    - no entiendo strlen
+    - explicame strlen
+    - como saber cuanto mide un string
+    - cuantos caracteres tiene una palabra
+    - como contar caracteres
+    - como saber la longitud de un texto
+    - como obtener el tamaño de una cadena
+
+- intent: ask_strcpy
+  examples: |
+    - que es strcpy
+    - para que sirve strcpy
+    - que hace strcpy
+    - como funciona strcpy
+    - como se usa strcpy
+    - strcpy que hace
+    - strcpy para que sirve
+    - como copiar un string
+    - como copiar una cadena
+    - como guardar un string en otro
+    - como copiar texto en c
+    - como copiar una cadena en c
+    - no entiendo strcpy
+    - explicame strcpy
+    - como duplicar un string
+    - como pasar un string a otro
+    - como guardar una copia de una cadena
+    - copiar texto de una variable a otra
+
+- intent: ask_strcmp
+  examples: |
+    - que es strcmp
+    - para que sirve strcmp
+    - que hace strcmp
+    - como funciona strcmp
+    - como se usa strcmp
+    - strcmp que hace
+    - strcmp para que sirve
+    - como comparar strings
+    - como comparar cadenas
+    - como saber si dos strings son iguales
+    - como saber si dos cadenas son iguales
+    - comparar texto en c
+    - comparar cadenas en c
+    - no entiendo strcmp
+    - explicame strcmp
+    - como comprobar si dos textos son iguales
+    - como comparar palabras
+    - como comparar dos cadenas de texto
+    - como saber si dos textos coinciden
+
+- intent: ask_strcat
+  examples: |
+    - que es strcat
+    - para que sirve strcat
+    - que hace strcat
+    - como funciona strcat
+    - como se usa strcat
+    - strcat que hace
+    - strcat para que sirve
+    - como concatenar strings
+    - como unir strings
+    - como juntar cadenas
+    - como unir dos cadenas
+    - como añadir un string al final de otro
+    - concatenar texto en c
+    - no entiendo strcat
+    - explicame strcat
+    - como juntar dos palabras
+    - como unir dos textos
+    - como añadir texto a una cadena
+    - como pegar dos strings
+
+- intent: ask_string_h
+  examples: |
+    - que es string.h
+    - para que sirve string.h
+    - que hace string.h
+    - cuando se usa string.h
+    - porque hay que poner string.h
+    - para que sirve incluir string.h
+    - que libreria necesito para strlen
+    - que libreria necesito para strcpy
+    - que libreria necesito para strcmp
+    - que libreria necesito para strcat
+    - no entiendo string.h
+    - explicame string.h

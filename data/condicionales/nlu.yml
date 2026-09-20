@@ -1,0 +1,260 @@
+version: "3.1"
+
+# TEMA 4
+
+nlu:
+
+# GENERALES
+- intent: ask_que_es_condicional
+  examples: |
+    - que es un condicional
+    - que es una condicion en programacion
+    - explicame los condicionales
+    - no entiendo los condicionales
+    - que significa condicional
+    - para que sirve un condicional
+    - que hace un condicional
+    - que es eso de condicional
+    - que es una estructura condicional
+    - que es una condicion
+    - que es un condicional en c
+    - condicional q es
+    - no pillo que es un condicional
+    - que es una condicion explicado facil
+    - que significa que algo sea condicional
+    - para q sirven los condicionales
+
+
+- intent: ask_como_hacer_condicion
+  examples: |
+    - como hago una condicion
+    - como hacer una condicion en c
+    - como poner una condicion
+    - como hacer condiciones
+    - como programar una condicion
+    - no entiendo como hacer una condicion
+    - como se usa una condicion
+    - como poner condiciones en c
+    - como crear una condicion
+    - como se escribe una condicion
+    - no se escribir condiciones en c
+    - como hago que el programa decida entre dos cosas
+    - como se programa una decision
+
+
+- intent: ask_ejemplo_if
+  examples: |
+    - ejemplo de if
+    - ponme un ejemplo de if
+    - ejemplo con if
+    - dame un ejemplo de if
+    - quiero un ejemplo de if
+    - ejemplo sencillo de if
+    - ejemplo de condicion if
+    - explicamelo con un ejemplo de if
+    - no entiendo el if ponme un ejemplo
+    - ejemplo practico de if
+    - ejemplo de if en c
+    - ejemplo facil de if
+    - como seria un ejemplo de if
+    - ejemplo de uso de if
+    - pon un ejemplo de if
+    - ponme un ejemplo facil de if
+    - ejemplo de if paso a paso
+    - ejemplo de if con edad
+    - hazme un ejemplo simple de condicional
+    - explicame if con un ejemplo
+    - explicame condicionales con un ejemplo
+    - no entiendo los if ponme un ejemplo
+
+
+# IF
+- intent: ask_sentencia_if
+  examples: |
+    - que es un if
+    - que hace un if
+    - para que sirve un if
+    - explicame el if
+    - no entiendo el if
+    - funcion del if
+    - uso del if
+    - que hace la sentencia if
+    - para que sirve if en c
+    - que hace un if en programacion
+    - que significa if
+    - explicame que hace if
+    - que es if en c
+    - para que sirve if
+    - que hace exactamente if
+    - if q hace
+    - if para que sirve
+    - no entiendo cuando se ejecuta el if
+    - como sabe el if si entrar o no
+    - explicame if facil
+    - que significa if en programacion
+    - como se hace un if
+    - como escribir un if
+    - como usar if
+    - explicame como hacer un if
+    - como se escribe un if en c
+    - como usar if en c
+    - como hago un if bien
+    - como pongo una condicion dentro del if
+    - me lio haciendo if
+    - cuando entra en el if
+    - cuando no entra en el if
+    - por que no entra en mi if
+    - mi if no se ejecuta
+    - como sabe el programa si entrar al if
+    - que tiene que pasar para que se ejecute el if
+
+
+- intent: ask_sentencia_if_else
+  examples: |
+    - que es un if else
+    - que hace un if else
+    - para que sirve if else
+    - explicame el if else
+    - no entiendo if else
+    - que significa if else
+    - uso del if else
+    - cuando usar if else
+    - que hace if else en c
+    - diferencia entre if e if else
+    - para que sirve else
+    - que hace el else
+    - explicame else
+    - que es else
+    - como funciona if else
+    - if else q es
+    - no entiendo el else
+    - que pasa si no se cumple el if
+    - para que sirve poner else
+    - diferencia entre if solo e if else
+    - cuando se ejecuta el else
+    - explicame if else facil
+    - como hago si pasa esto haz esto y si no otra cosa
+    - explicame if else paso a paso
+    - que pasa si la condicion del if es falsa 
+    - cuando entra en el else
+    - por que se ejecuta el else
+    - cuando no se ejecuta el else
+    - que diferencia hay entre if y else
+    - para que sirve poner una alternativa
+    - como hago una opcion si se cumple y otra si no
+
+# SWITCH
+- intent: ask_sentencia_switch
+  examples: |
+    - que es un switch
+    - que hace switch
+    - para que sirve switch
+    - explicame switch
+    - uso de switch
+    - que hace switch en c
+    - que significa switch
+    - explicame la sentencia switch
+    - switch que es
+    - para que sirve switch en c
+    - como funciona switch
+    - que hace switch en programacion
+    - que es un switch en c
+    - switch q es
+    - no pillo switch
+    - explicame switch facil
+    - que hace un case en switch
+    - como funciona switch case
+    - para que sirve switch case
+    - no entiendo los case
+    - no entiendo switch
+    - explicame switch desde cero
+    - que es case en c
+    - para que sirve case
+    - que significa default en switch
+    - para que sirve default
+    - como funciona un menu con switch
+    - que pasa si ningun case coincide
+
+- intent: ask_cuando_usar_switch
+  examples: |
+    - cuando usar switch
+    - cuando usar switch en c
+    - cuando es mejor switch que if
+    - diferencia entre if y switch
+    - cuando usar switch o if
+    - para que casos usar switch
+    - cuando conviene usar switch
+    - cuando elegir switch
+    - en que casos usar switch
+    - switch o if cual usar
+    - cuando usar switch en vez de if
+    - en que situaciones usar switch
+    - cuando usar switch en programacion
+    - para que sirve switch comparado con if
+    - cuando usar switch correctamente
+    - cuando es mejor usar switch
+    - cuando uso switch y cuando if else
+    - me lio entre switch e if
+    - para muchos casos uso switch?
+    - switch sirve para elegir entre varias opciones?
+    - cuando no puedo usar switch
+    - diferencia if else y switch explicado facil
+    - switch es como muchos if?
+
+
+- intent: ask_ejemplo_switch
+  examples: |
+    - ejemplo de switch
+    - ponme un ejemplo de switch
+    - ejemplo con switch
+    - dame un ejemplo de switch
+    - quiero un ejemplo de switch
+    - ejemplo sencillo de switch
+    - ejemplo de switch en c
+    - explicamelo con un ejemplo de switch
+    - no entiendo switch ponme un ejemplo
+    - ejemplo practico de switch
+    - ejemplo facil de switch
+    - como seria un ejemplo de switch
+    - ejemplo de uso de switch
+    - pon un ejemplo de switch
+    - ejemplo de estructura switch
+    - ponme un ejemplo facil de switch
+    - ejemplo de switch con menu
+    - ejemplo de switch con opciones
+    - necesito ver switch con codigo
+    - quiero ver un switch con codigo
+    - hazme un ejemplo simple de switch case
+    - ejemplo paso a paso de switch
+    - explicame switch con un ejemplo
+
+# BREAK
+- intent: ask_break_switch
+  examples: |
+    - que hace break en switch
+    - para que sirve break en switch
+    - que hace break en un switch
+    - explicame break en switch
+    - no entiendo break en switch
+    - uso de break en switch
+    - que pasa si no pongo break
+    - para que sirve break dentro de switch
+    - break en switch que hace
+    - como funciona break en switch
+    - que hace break en case
+    - break dentro de switch
+    - para que sirve break en case
+    - uso de break en case
+    - que hace break en switch en c
+    - break q hace en switch
+    - que pasa si me olvido del break
+    - por que hay que poner break en cada case
+    - no entiendo por que se ejecutan varios case
+    - para que sirve break despues de un case
+    - si no pongo break que ocurre
+    - break corta el switch?
+    - por que se ponen break en los case
+    - que pasa si un case no tiene break
+    - se ejecutan todos los case si no pongo break
+    - break evita que siga al siguiente case
+    - por que mi switch ejecuta varias opciones

@@ -1,0 +1,95 @@
+version: "3.1"
+
+nlu:
+- intent: pedir_minitest
+  examples: |
+    - quiero hacer un minitest
+    - hazme un minitest
+    - ponme un minitest
+    - quiero un test
+    - ponme un test
+    - practicar
+    - quiero practicar
+    - quiero hacer un test de programación
+    - quiero evaluarme
+    - quiero probarme
+    - quiero hacer preguntas tipo test
+    - evaluame
+    - hazme preguntas
+    - hazme unas preguntas
+    - quiero responder preguntas
+    - quiero contestar preguntas
+    - preguntame cosas
+    - preguntame sobre programación
+    - quiero un cuestionario
+    - ponme un cuestionario
+    - quiero hacer un cuestionario
+    - quiero comprobar lo que se
+    - quiero comprobar mis conocimientos
+    - quiero ver cuanto se
+    - quiero ponerme a prueba
+    - quiero hacer una prueba
+    - quiero examinarme
+    - quiero autoevaluarme
+    - quiero saber si me lo se
+    - quiero saber si he aprendido
+    - quiero comprobar si me se el tema
+    - quiero practicar con preguntas
+    - quiero unas preguntas tipo test
+    - quiero hacer una autoevaluacion
+    - ponme a prueba
+    - hazme un examen
+    - quiero hacer un examen
+    - dame unas preguntas
+    - dame un test rapido
+    - quiero repasar con preguntas
+    - quiero entrenar
+    - quiero practicar un poco
+    - vamos a hacer un test
+    - quiero ver si apruebo
+    - quiero hacer un minitest de un tema
+
+
+
+- intent: respuesta_a
+  examples: |
+    - a
+    - A
+    - la a
+    - la A
+    - opción a
+    - opcion a
+    - la opción a
+    - la opcion a
+
+- intent: respuesta_b
+  examples: |
+    - b
+    - B
+    - la b
+    - la B
+    - opción b
+    - opcion b
+    - la opción b
+    - la opcion b
+
+- intent: respuesta_c
+  examples: |
+    - c
+    - C
+    - la c
+    - la C
+    - opción c
+    - opcion c
+    - la opción c
+    - la opcion c
+
+- intent: respuesta_invalida_minitest
+  examples: |
+    - d
+    - e
+    - no se
+    - ns
+    - ni idea
+    - puede ser d
+    - creo que es d

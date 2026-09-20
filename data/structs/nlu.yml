@@ -1,0 +1,308 @@
+version: "3.1"
+
+#TEMA 10
+
+nlu:
+- intent: ask_structs
+  examples: |
+    - que es un struct
+    - que es una estructura en c
+    - que es un struct en c
+    - para que sirve struct
+    - para que sirve un struct
+    - explicame los structs
+    - no entiendo los structs
+    - que es un struct en programacion
+    - como usar structs
+    - como se usan los structs
+    - como funcionan los structs
+    - para que sirven los structs
+    - uso de structs
+    - cuando usar structs
+    - como trabajar con structs
+    - estoy viendo structs y no entiendo nada
+    - me puedes explicar los structs de forma facil
+    - no entiendo como funcionan los structs
+    - me cuesta entender los struct
+    - en clase hemos dado structs y no me entero
+    - explicame structs como si fuera tonto
+    - ke son los structs
+    - q son los struct
+
+- intent: ask_definicion_struct
+  examples: |
+    - como se define un struct
+    - crear un struct en c
+    - definir una estructura
+    - como escribir struct
+    - como se define un struct en c
+    - como crear una estructura paso a paso
+    - como hacer un struct desde cero
+    - no entiendo como se define un struct
+    - explicame como definir un struct
+    - me puedes explicar como crear un struct
+    - como se hace un struct en programacion
+    - como escribir una estructura en c
+    - como definir structs en c
+    - como se crean structs
+    - quiero aprender a definir structs
+    - ayudame a crear un struct
+    - explicame como hacer structs
+    - no entiendo los structs como se crean
+    - como crear un struct
+    - crear estructura en c
+    - hacer un struct paso a paso
+    - como se crea un struct en programacion
+    - como definir un struct
+    - definir un struct
+    - quiero definir un struct
+    - como puedo definir un struct
+    - como se define el struct
+    - como se escribe un struct
+
+- intent: ask_declaracion_struct
+  examples: |
+    - como declarar una variable struct
+    - crear variables de tipo struct
+    - declarar struct en c
+    - declarar variable struct
+    - instanciar un struct
+    - como declarar un struct
+    - como se declara un struct en c
+    - sintaxis de struct
+    - declarar estructura en c
+    - como definir un struct en c
+    - como hacer un struct paso a paso
+    - no entiendo como declarar structs
+    - como crear una estructura en c
+    - como creo una estructura en c
+    - como hago un struct desde cero
+    - como definir estructuras
+    - me cuesta declarar structs
+    - como crear una variable de tipo struct
+
+- intent: ask_acceso_struct
+  examples: |
+    - como acceder a los campos de un struct
+    - operador punto struct
+    - uso del operador .
+    - uso del . en struct
+    - uso del operador punto
+    - como acceder a un struct
+    - acceder a atributos struct
+    - como usar el punto en struct
+    - como usar el punto en structs
+    - para que sirve el punto en struct
+    - como acceder a una estructura
+    - no entiendo como acceder a structs
+    - como leer datos de un struct
+    - operador punto que hace
+    - . que hace struct
+
+- intent: ask_arrays_struct
+  examples: |
+    - arrays de structs
+    - vectores de structs
+    - vectores de structs
+    - como hacer un array de structs
+    - como hacer un vector de structs
+    - struct en arrays
+    - struct en vectores
+    - listas de structs
+    - como hacer arrays de structs en c
+    - como hacer vectores de structs en c
+    - como crear un vector de estructuras
+    - como declarar un array de structs
+    - como declarar un vector de structs
+    - como usar structs dentro de arrays
+    - como usar structs dentro de vectores
+    - como guardar varios structs en un array
+    - como guardar varios structs en un vector
+    - como recorrer un array de structs
+    - como recorrer un vector de structs
+    - como acceder a un array de estructuras
+    - como acceder a un vector de estructuras
+    - no entiendo arrays de structs
+    - no entiendo vectores de structs
+    - explicame arrays de structs
+    - explicame vectores de structs
+    - como funcionan los arrays de estructuras
+    - como funcionan los vectores de estructuras
+    - quiero aprender arrays de structs
+    - quiero aprender vectores de structs
+    - ayudame con arrays de estructuras
+    - ayudame con vectores de estructuras
+    - no entiendo los arrays de structs en c
+    - no entiendo los vectores de structs en c
+    - array de struct
+    - vector de struct
+    - arrays struct c
+    - vectores struct c
+    - como acer array de structs
+    - como acer vector de structs
+    - como guardar varios alumnos con struct
+    - como guardar varias personas con structs
+    - como recorrer varios structs
+    - como imprimir un array de structs
+    - como imprimir un vector de structs
+
+- intent: ask_punteros_struct
+  examples: |
+    - punteros a structs
+    - operador flecha ->
+    - como acceder con punteros a struct
+    - struct con punteros
+    - uso de -> en c
+    - como usar punteros a structs
+    - como acceder a struct con puntero
+    - como funciona -> en structs
+    - para que sirve el operador flecha en structs
+    - como acceder a campos con punteros
+    - no entiendo punteros a structs
+    - explicame punteros con structs
+    - como trabajar con struct y punteros
+    - quiero entender punteros con structs
+    - ayudame con structs y punteros
+    - no me entero del operador ->
+    - structs con pointer
+    - punteros struct c
+    - operador flecha struct
+    - -> q hace
+    - -> que hace
+    - operador flecha que hace
+    - uso del operador ->
+    - para que sirve ->
+    - como usar flecha en un struct
+    - como usar la flecha en un struct
+    - como se usa flecha en un struct
+    - como se usa la flecha en un struct
+    - como acceder con flecha a un struct
+    - como acceder a un campo con flecha
+
+- intent: ask_structs_funciones
+  examples: |
+    - structs en funciones
+    - pasar struct a funciones
+    - devolver struct desde funcion
+    - funciones con structs
+    - usar structs en funciones
+    - como pasar un struct a una funcion en c
+    - como devolver un struct desde una funcion
+    - como usar estructuras en funciones
+    - como trabajar con structs en funciones
+    - se pueden devolver structs en funciones
+    - como modificar un struct en una funcion
+    - no entiendo structs en funciones
+    - explicame structs en funciones
+    - como funcionan las funciones con structs
+    - quiero aprender structs en funciones
+    - ayudame con funciones y structs
+    - no me entero de structs en funciones
+    - struct en funcion c
+    - funciones structs c
+    - pasar struct funcion
+    - como pasar un struct por referencia
+    - como pasar un struct por valor
+    - una funcion puede recibir un struct
+    - puedo modificar un struct dentro de una funcion
+
+- intent: ask_errores_struct
+  examples: |
+    - errores comunes con structs
+    - fallos al usar structs
+    - problemas con estructuras
+    - bugs con structs
+    - errores al acceder a campos
+    - no me funcionan los structs
+    - me falla el struct
+    - porque mi struct no funciona
+    - estoy teniendo problemas con structs
+    - no me deja acceder a los campos del struct
+    - error al usar structs en c
+    - no entiendo los errores de structs
+    - me da error con estructuras
+    - tengo problemas con structs en c
+    - errores structs
+    - fallo struct c
+    - problemas struct
+    - struct error c
+    - error al usar el punto en un struct
+    - error al usar flecha en un struct
+    - me dice que el campo no existe
+    - no puedo acceder a un campo del struct
+    - me da error al declarar una variable struct
+
+- intent: ask_campos_struct
+  examples: |
+    - que es un campo en un struct
+    - que es un campo
+    - que son los campos de un struct
+    - que son los campos de un struct en c
+    - que significa campo en un struct
+    - que significa campo en struct
+    - que es un atributo de un struct
+    - que son los atributos de un struct
+    - que contiene un struct
+    - que guarda un struct
+    - como se llaman las variables dentro de un struct
+    - que hay dentro de un struct
+    - de que esta formado un struct
+    - que elementos tiene un struct
+    - que partes tiene un struct
+    - que variables tiene un struct
+    - como se llaman los datos dentro de un struct
+    - que guarda un struct por dentro
+    - que informacion tiene un struct
+    - que cosas tiene un struct
+    - como estan organizados los structs por dentro
+    - que lleva dentro un struct
+    - no entiendo que hay dentro de un struct
+    - me puedes explicar que guarda un struct
+    - ayudame a entender los campos de un struct
+    - campos struct
+    - que tiene struct
+    - struct que guarda
+
+- intent: ask_diferencia_acceso_struct
+  examples: |
+    - diferencia entre . y ->
+    - diferencia entre punto y flecha
+    - cual es la diferencia entre . y ->
+    - que diferencia hay entre . y ->
+    - en que se diferencian . y ->
+    - cuando usar . y ->
+    - cuando se usa . en struct
+    - cuando se usa -> en struct
+    - diferencia entre acceder con punto y con flecha
+    - acceso a struct con punto o flecha
+    - diferencia entre operador . y operador ->
+    - no entiendo la diferencia entre . y ->
+    - me puedes explicar cuando usar punto o flecha
+    - me lio con . y -> en structs
+    - no se cuando usar . o ->
+    - explicame facil la diferencia entre . y ->
+    - cuando tengo que usar punto o flecha en structs
+    - no se cuando tengo que usar flecha o punto en structs
+    - no me entero de lo del punto y la flecha
+    - diferencia punto flecha struct
+
+- intent: ask_ejemplo_struct
+  examples: |
+    - ejemplo de struct
+    - dame un ejemplo de struct
+    - ejemplo struct en c
+    - como es un struct ejemplo
+    - ejemplo de estructura en c
+    - puedes ponerme un ejemplo sencillo de struct
+    - dame un ejemplo facil de struct en c
+    - quiero ver un struct con ejemplo
+    - enseñame un ejemplo de estructura paso a paso
+    - ejemplo de struct explicado
+    - como seria un struct en la practica
+    - ponme un ejemplo basico de struct
+    - no entiendo los structs ponme un ejemplo
+    - explicame structs con un ejemplo
+    - ayudame con un ejemplo de struct
+    - ejemplo struct
+    - struct ejemplo c
+    - ejemplo estructura

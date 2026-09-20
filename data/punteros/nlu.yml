@@ -1,0 +1,257 @@
+version: "3.1"
+
+#TEMA 9
+
+nlu:
+
+- intent: ask_punteros
+  examples: |
+    - que es un puntero
+    - que son los punteros
+    - explicame que es un puntero
+    - explicame los punteros
+    - no entiendo los punteros
+    - como funcionan los punteros
+    - como funciona un puntero
+    - como se usa un puntero
+    - usar punteros
+    - que hace un puntero
+    - que es un puntero en c
+    - como van los punteros
+    - como trabajan los punteros
+    - estoy viendo punteros y no entiendo nada
+    - me puedes explicar los punteros de forma facil
+    - no entiendo como funcionan los punteros
+    - me cuesta entender los pointers
+    - en clase hemos dado punteros y no me entero
+    - explicame punteros como si fuera tonto
+    - ke son los punteros
+    - q son los pointers
+
+- intent: ask_direcciones_memoria
+  examples: |
+    - que es una direccion de memoria
+    - que son las direcciones de memoria
+    - explicame la direccion de memoria
+    - como funciona una direccion de memoria
+    - que significa direccion de memoria
+    - para que sirve una direccion de memoria
+    - que guarda una direccion de memoria
+    - como se identifica una variable en memoria
+    - donde esta una variable en memoria
+    - memoria y direcciones
+    - como sabe el ordenador donde esta una variable
+    - cada variable tiene una direccion
+    - como encuentra una variable el programa
+    - donde guarda el ordenador las variables
+    - como localizar una variable en memoria
+
+- intent: ask_operador_dereferencia
+  examples: |
+    - que hace *
+    - que hace * en punteros
+    - que significa *
+    - para que sirve *
+    - para que sirve el simbolo *
+    - que hace el asterisco
+    - para que sirve el asterisco
+    - para que sirve el asterisco en punteros
+    - que hace el operador *
+    - que hace el simbolo *
+    - uso de *
+    - que significa el operador de dereferencia
+    - que significa el asterisco en punteros
+    - que significa * en punteros
+    - que es dereferenciar
+    - que hace la dereferencia
+    - como funciona *
+    - como funciona el asterisco en punteros
+    - operador de dereferencia
+    - operador * en punteros
+    - para que sirve el asterisco en punteros
+    - que hace el * en un puntero
+    - como se usa el operador *
+    - no entiendo el asterisco en punteros
+    - que significa * en c con punteros
+    - como funciona el operador de dereferencia
+    - * que hace
+    - operador * que hace
+    - asterisco que hace
+    - uso del *
+    - * q hace
+    - q hace *
+    - como acceder al valor apuntado
+    - como obtener el valor de un puntero
+    - como leer lo que apunta un puntero
+    - como acceder al contenido de una direccion
+
+- intent: ask_operador_referencia
+  examples: |
+    - que hace &
+    - qué hace &
+    - que hace ampersand
+    - que significa &
+    - qué significa &
+    - qué significa ampersand
+    - para que sirve &
+    - para qué sirve &
+    - para qué sirve ampersand
+    - que hace el ampersand
+    - qué hace el ampersand
+    - ampersand
+    - que hace el operador &
+    - qué hace el operador &
+    - qué hace el operador ampersand
+    - uso de &
+    - uso de ampersand
+    - para que sirve el operador &
+    - que significa el operador de referencia
+    - como funciona &
+    - como funciona ampersand
+    - operador de referencia
+    - que hace la referencia
+    - obtener direccion con &
+    - & que hace
+    - ampersand que hace
+    - operador & que hace
+    - como obtener la direccion de una variable
+    - como saber donde esta una variable en memoria
+    - como sacar la direccion de memoria
+    - como guardar la direccion de una variable en un puntero
+
+- intent: ask_diferencia_operadores_punteros
+  examples: |
+    - diferencia entre * y &
+    - diferencia entre asterisco y ampersand
+    - diferencia entre & y *
+    - diferencia entre ampersand y asterisco
+    - en que se diferencian asterisco y ampersand
+    - en que se diferencian * y &
+    - cual es la diferencia entre asterisco y ampersand
+    - cual es la diferencia entre * y &
+    - que diferencia hay entre * y &
+    - que diferencia hay entre asterisco y ampersand
+    - operador referencia y dereferencia
+    - diferencia entre referencia y dereferencia
+    - que hace & y que hace *
+    - que hace ampersand y que hace asterisco
+    - no entiendo la diferencia entre * y &
+    - no entiendo la diferencia entre asterisco y ampersand
+    - cuando usar * y cuando &
+    - cuando usar asterisco y cuando ampersand
+    - como distinguir * y &
+    - como distinguir asterisco y ampersand
+    - para que sirve cada operador en punteros
+
+- intent: ask_declaracion_punteros
+  examples: |
+    - como se declara un puntero
+    - como declarar un puntero
+    - declaracion de punteros
+    - como se escribe un puntero
+    - que pongo para declarar un puntero
+    - como crear un puntero
+    - como se crea un puntero
+    - sintaxis de punteros
+    - como hacer un puntero en c
+    - declarar un puntero en c
+    - como definir un puntero
+    - estructura de un puntero
+    - como guardar una direccion de memoria
+    - como hago para guardar direcciones
+    - como crear un pointer en c
+    - como declarar un pointer paso a paso
+    - no entiendo como declarar punteros
+    - como hago un puntero desde cero
+    - como guardar la direccion de una variable
+
+- intent: ask_ejemplo_puntero
+  examples: |
+    - ejemplo de puntero
+    - ponme un ejemplo de puntero
+    - dame un ejemplo de puntero
+    - quiero un ejemplo de puntero
+    - ejemplo de puntero en c
+    - enseñame un puntero de ejemplo
+    - como seria un puntero de ejemplo
+    - ejemplo practico de puntero
+    - quiero ver un puntero
+    - pon un ejemplo de punteros
+    - dame un ejemplo sencillo de puntero
+    - ejemplo con punteros
+    - puedes ponerme un ejemplo de punteros
+    - dame un ejemplo sencillo de punteros
+    - quiero ver un ejemplo en c de punteros
+    - enseñame un ejemplo facil de pointer
+
+- intent: ask_uso_punteros
+  examples: |
+    - uso de punteros
+    - usos de los punteros
+    - para que se usan los punteros
+    - para que sirve usar punteros
+    - en que casos se usan los punteros
+    - en que se usan los punteros
+    - cuando se usan los punteros
+    - por que se usan punteros
+    - para que me sirven los punteros
+    - utilidad de los punteros
+    - aplicaciones de los punteros
+    - cuando conviene usar punteros
+    - por que usar punteros en c
+    - cuando tengo que usar punteros
+    - no entiendo para que sirven los pointers
+    - para que quiero usar punteros
+    - para que sirve un puntero
+    - para que sirven los punteros
+    - por que usar punteros
+
+- intent: ask_punteros_arrays
+  examples: |
+    - punteros y arrays
+    - punteros y vectores
+    - relacion entre punteros y arrays
+    - relacion entre punteros y vectores
+    - que tienen que ver los punteros con los arrays
+    - que tienen que ver los punteros con los vectores
+    - como se relacionan punteros y arrays
+    - como se relacionan punteros y vectores
+    - punteros con arrays
+    - punteros con vectores
+    - arrays y punteros
+    - vectores y punteros
+    - explicame punteros y arrays
+    - explicame punteros y vectores
+    - como funcionan punteros y arrays
+    - como funcionan punteros y vectores
+    - punteros dentro de arrays
+    - punteros dentro de vectores
+    - arrays como punteros
+    - vectores como punteros
+    - por que dicen que un array es un puntero
+    - por que dicen que un vector es un puntero
+    - un array y un puntero son lo mismo
+    - un vector y un puntero son lo mismo
+    - diferencia entre array y puntero
+    - diferencia entre vector y puntero
+    - por que se parecen arrays y punteros
+    - por que se parecen vectores y punteros
+
+- intent: ask_punteros_funciones
+  examples: |
+    - punteros y funciones
+    - relacion entre punteros y funciones
+    - que tienen que ver los punteros con las funciones
+    - como se relacionan punteros y funciones
+    - punteros con funciones
+    - funciones y punteros
+    - explicame punteros y funciones
+    - como funcionan punteros y funciones
+    - paso por referencia con punteros
+    - punteros al llamar funciones
+    - como pasar punteros a funciones
+    - como usar punteros en funciones
+    - que pasa si paso un puntero a una funcion
+    - no entiendo punteros en funciones
+    - para que sirven punteros en funciones
+
