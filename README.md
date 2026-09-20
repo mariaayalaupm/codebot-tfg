@@ -63,8 +63,7 @@ codebot-tfg/
 ├── domain.yml                     # Intents, entidades, slots, respuestas y acciones
 ├── endpoints.yml                  # Conexión con el servidor de acciones
 ├── telegram_bridge.py             # Puente entre Telegram y Rasa
-├── progreso_alumnos.json          # Resultados de los minitests
-└── progreso_ejercicios_guiados.json # Registro de ejercicios consultados
+└── README.md                      # Documentación principal
 ```
 
 Los directorios del entorno virtual, los modelos entrenados y los archivos temporales de Rasa no se almacenan en el repositorio.
@@ -103,6 +102,7 @@ Los directorios del entorno virtual, los modelos entrenados y los archivos tempo
    ```bash
    python -m pip install --upgrade pip
    pip install -r requirements.txt
+   ```
 
 4. Entrenar el modelo:
 
@@ -149,13 +149,15 @@ $env:TELEGRAM_BOT_TOKEN="TOKEN_DEL_BOT"
 python telegram_bridge.py
 ## Validación
 
-La versión definitiva se evaluó mediante una campaña exhaustiva formada por **714 pruebas distribuidas en 13 hojas**, seguida de una revalidación funcional, de regresión y del modelo NLU sobre la versión 18.
+La versión definitiva se evaluó mediante una campaña exhaustiva formada por **711 pruebas distribuidas en 13 hojas**, seguida de una revalidación funcional, de regresión y del modelo NLU sobre la versión 18.
 
 Los registros completos se encuentran en la carpeta [`validacion`](validacion/), junto con una descripción de los archivos incluidos.
 
 ## Privacidad y seguridad
 
-Los archivos de progreso pueden contener identificadores y datos asociados a usuarios de Telegram. Antes de reutilizar, distribuir o publicar el proyecto, estos registros deben vaciarse, sustituirse por datos de ejemplo o anonimizarse. Las credenciales y los tokens deben gestionarse fuera del código fuente.
+Los archivos `progreso_alumnos.json` y `progreso_ejercicios_guiados.json` se generan automáticamente durante el uso del sistema y pueden contener identificadores y datos asociados a usuarios de Telegram.
+
+Por este motivo, ambos archivos están excluidos del repositorio mediante `.gitignore`. Las credenciales y los tokens también se gestionan fuera del código fuente.
 
 ## Autoría
 
